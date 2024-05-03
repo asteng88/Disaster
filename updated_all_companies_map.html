@@ -1,0 +1,3420 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_906d40b0c8662cb1e2f6f5a74eeffc4c {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_906d40b0c8662cb1e2f6f5a74eeffc4c" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_906d40b0c8662cb1e2f6f5a74eeffc4c = L.map(
+                "map_906d40b0c8662cb1e2f6f5a74eeffc4c",
+                {
+                    center: [39.82, -86.06],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 0,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_8030262f17a78c3c408586a3e56d1e9d = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_8030262f17a78c3c408586a3e56d1e9d.addTo(map_906d40b0c8662cb1e2f6f5a74eeffc4c);
+        
+    
+            var marker_297b53349bae3384ca37cde7d3e72ed8 = L.marker(
+                [39.82, -86.06],
+                {}
+            ).addTo(map_906d40b0c8662cb1e2f6f5a74eeffc4c);
+        
+    
+            var icon_2736c53c95a6d67b580f7c03b539273c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_297b53349bae3384ca37cde7d3e72ed8.setIcon(icon_2736c53c95a6d67b580f7c03b539273c);
+        
+    
+        var popup_3fc81cba91c0e401a9a9ebd64220900b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e691641a7f16c5a1b6a422945d7e061f = $(`<div id="html_e691641a7f16c5a1b6a422945d7e061f" style="width: 100.0%; height: 100.0%;">Viant Indianapolis</div>`)[0];
+                popup_3fc81cba91c0e401a9a9ebd64220900b.setContent(html_e691641a7f16c5a1b6a422945d7e061f);
+            
+        
+
+        marker_297b53349bae3384ca37cde7d3e72ed8.bindPopup(popup_3fc81cba91c0e401a9a9ebd64220900b)
+        ;
+
+        
+    
+    
+            var marker_e5945a1d22f58243b67739c29ec1cff6 = L.marker(
+                [41.11, -85.21],
+                {}
+            ).addTo(map_906d40b0c8662cb1e2f6f5a74eeffc4c);
+        
+    
+            var icon_1814bdb3e8114c720595f09f55ce8b8f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e5945a1d22f58243b67739c29ec1cff6.setIcon(icon_1814bdb3e8114c720595f09f55ce8b8f);
+        
+    
+        var popup_0616b8eeee39d5e8f902f369f31f9250 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_78fa761d92839128e4b1f3ba494994cc = $(`<div id="html_78fa761d92839128e4b1f3ba494994cc" style="width: 100.0%; height: 100.0%;">Viant Fort Wayne</div>`)[0];
+                popup_0616b8eeee39d5e8f902f369f31f9250.setContent(html_78fa761d92839128e4b1f3ba494994cc);
+            
+        
+
+        marker_e5945a1d22f58243b67739c29ec1cff6.bindPopup(popup_0616b8eeee39d5e8f902f369f31f9250)
+        ;
+
+        
+    
+    
+            var marker_4cd1a1a7d55230a02d24dc0dd8211c2b = L.marker(
+                [42.11, 72.2],
+                {}
+            ).addTo(map_906d40b0c8662cb1e2f6f5a74eeffc4c);
+        
+    
+            var icon_13cf8724fa6250b7acb9162406ac1545 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_4cd1a1a7d55230a02d24dc0dd8211c2b.setIcon(icon_13cf8724fa6250b7acb9162406ac1545);
+        
+    
+        var popup_fafc2bc61819365f7c5a9e0d8079cd48 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dc23f43d7cda69ab0bf6bfa4caf3c611 = $(`<div id="html_dc23f43d7cda69ab0bf6bfa4caf3c611" style="width: 100.0%; height: 100.0%;">Viant Brimfield</div>`)[0];
+                popup_fafc2bc61819365f7c5a9e0d8079cd48.setContent(html_dc23f43d7cda69ab0bf6bfa4caf3c611);
+            
+        
+
+        marker_4cd1a1a7d55230a02d24dc0dd8211c2b.bindPopup(popup_fafc2bc61819365f7c5a9e0d8079cd48)
+        ;
+
+        
+    
+    
+            var marker_b52700945480fd928c97a7a44f739a88 = L.marker(
+                [42.18, -72.55],
+                {}
+            ).addTo(map_906d40b0c8662cb1e2f6f5a74eeffc4c);
+        
+    
+            var icon_fff4f4447c0b8253da69ce04e13f3e27 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b52700945480fd928c97a7a44f739a88.setIcon(icon_fff4f4447c0b8253da69ce04e13f3e27);
+        
+    
+        var popup_f90d30d4a6647dedfcfa279c3ee1267d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a687af0242a3aee624ae95e298727c16 = $(`<div id="html_a687af0242a3aee624ae95e298727c16" style="width: 100.0%; height: 100.0%;">Viant Chicopee</div>`)[0];
+                popup_f90d30d4a6647dedfcfa279c3ee1267d.setContent(html_a687af0242a3aee624ae95e298727c16);
+            
+        
+
+        marker_b52700945480fd928c97a7a44f739a88.bindPopup(popup_f90d30d4a6647dedfcfa279c3ee1267d)
+        ;
+
+        
+    
+    
+            var marker_7b4c8c99dae8457fd0112f5a88717a41 = L.marker(
+                [31.3, 120.61],
+                {}
+            ).addTo(map_906d40b0c8662cb1e2f6f5a74eeffc4c);
+        
+    
+            var icon_4b588ed8bd1e975e07ede1be22f4587e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_7b4c8c99dae8457fd0112f5a88717a41.setIcon(icon_4b588ed8bd1e975e07ede1be22f4587e);
+        
+    
+        var popup_b48257bdcf5e4d9e52d1a0d2a62fd7d3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b619753adc6714dd64af513af33b88c5 = $(`<div id="html_b619753adc6714dd64af513af33b88c5" style="width: 100.0%; height: 100.0%;">Viant China</div>`)[0];
+                popup_b48257bdcf5e4d9e52d1a0d2a62fd7d3.setContent(html_b619753adc6714dd64af513af33b88c5);
+            
+        
+
+        marker_7b4c8c99dae8457fd0112f5a88717a41.bindPopup(popup_b48257bdcf5e4d9e52d1a0d2a62fd7d3)
+        ;
+
+        
+    
+    
+            var marker_fc5733bef4afa60faa8c20b95712c733 = L.marker(
+                [40.18, -75.48],
+                {}
+            ).addTo(map_906d40b0c8662cb1e2f6f5a74eeffc4c);
+        
+    
+            var icon_8ac65dd06037b894a2ce9b4f62e1a89a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_fc5733bef4afa60faa8c20b95712c733.setIcon(icon_8ac65dd06037b894a2ce9b4f62e1a89a);
+        
+    
+        var popup_87adf53044595f13fe69d753daa1eb3d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_961bc9a936c7b1d927d00ab1314c39f6 = $(`<div id="html_961bc9a936c7b1d927d00ab1314c39f6" style="width: 100.0%; height: 100.0%;">Viant Collegeville</div>`)[0];
+                popup_87adf53044595f13fe69d753daa1eb3d.setContent(html_961bc9a936c7b1d927d00ab1314c39f6);
+            
+        
+
+        marker_fc5733bef4afa60faa8c20b95712c733.bindPopup(popup_87adf53044595f13fe69d753daa1eb3d)
+        ;
+
+        
+    
+    
+            var marker_7bd5db49b1062b37f383932f70568ec0 = L.marker(
+                [9.98, -84.1],
+                {}
+            ).addTo(map_906d40b0c8662cb1e2f6f5a74eeffc4c);
+        
+    
+            var icon_d430075c96c4fe56fc04fcba5224de9b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_7bd5db49b1062b37f383932f70568ec0.setIcon(icon_d430075c96c4fe56fc04fcba5224de9b);
+        
+    
+        var popup_3098b26b1268332ec5def6b10eaff553 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_13be2f70f179800b7ea828a9630bb721 = $(`<div id="html_13be2f70f179800b7ea828a9630bb721" style="width: 100.0%; height: 100.0%;">Viant Costa Rica</div>`)[0];
+                popup_3098b26b1268332ec5def6b10eaff553.setContent(html_13be2f70f179800b7ea828a9630bb721);
+            
+        
+
+        marker_7bd5db49b1062b37f383932f70568ec0.bindPopup(popup_3098b26b1268332ec5def6b10eaff553)
+        ;
+
+        
+    
+    
+            var marker_235e769189cac067548c653089c3d064 = L.marker(
+                [42.66, -88.54],
+                {}
+            ).addTo(map_906d40b0c8662cb1e2f6f5a74eeffc4c);
+        
+    
+            var icon_f83d829ac163e763349441ee58063f08 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_235e769189cac067548c653089c3d064.setIcon(icon_f83d829ac163e763349441ee58063f08);
+        
+    
+        var popup_75bcc11743b6e951b9ef20fe9eae459a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6cd098d63d1d020b60af57824335ae15 = $(`<div id="html_6cd098d63d1d020b60af57824335ae15" style="width: 100.0%; height: 100.0%;">Viant Elkhorn</div>`)[0];
+                popup_75bcc11743b6e951b9ef20fe9eae459a.setContent(html_6cd098d63d1d020b60af57824335ae15);
+            
+        
+
+        marker_235e769189cac067548c653089c3d064.bindPopup(popup_75bcc11743b6e951b9ef20fe9eae459a)
+        ;
+
+        
+    
+    
+            var marker_ff9db1b5ffcc02488da518d6a9af4db0 = L.marker(
+                [48.07, 5.14],
+                {}
+            ).addTo(map_906d40b0c8662cb1e2f6f5a74eeffc4c);
+        
+    
+            var icon_058fe8e0ca8928c95046ba3c1e4d43c8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ff9db1b5ffcc02488da518d6a9af4db0.setIcon(icon_058fe8e0ca8928c95046ba3c1e4d43c8);
+        
+    
+        var popup_8907878d2fc567e027633a2729bd94e4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_050134184a33216cc3eb8b3a531c579c = $(`<div id="html_050134184a33216cc3eb8b3a531c579c" style="width: 100.0%; height: 100.0%;">Viant Chaumont</div>`)[0];
+                popup_8907878d2fc567e027633a2729bd94e4.setContent(html_050134184a33216cc3eb8b3a531c579c);
+            
+        
+
+        marker_ff9db1b5ffcc02488da518d6a9af4db0.bindPopup(popup_8907878d2fc567e027633a2729bd94e4)
+        ;
+
+        
+    
+    
+            var marker_739cead1476a3275af85cf646000ea89 = L.marker(
+                [37.49, -121.95],
+                {}
+            ).addTo(map_906d40b0c8662cb1e2f6f5a74eeffc4c);
+        
+    
+            var icon_463effbdd1f75a2368c0eca9698e615d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_739cead1476a3275af85cf646000ea89.setIcon(icon_463effbdd1f75a2368c0eca9698e615d);
+        
+    
+        var popup_bd0efe25479c45a9563c14649d55eb1b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_eac7c96143cdc8a5a4eb8b1a101ad456 = $(`<div id="html_eac7c96143cdc8a5a4eb8b1a101ad456" style="width: 100.0%; height: 100.0%;">Viant Fremont</div>`)[0];
+                popup_bd0efe25479c45a9563c14649d55eb1b.setContent(html_eac7c96143cdc8a5a4eb8b1a101ad456);
+            
+        
+
+        marker_739cead1476a3275af85cf646000ea89.bindPopup(popup_bd0efe25479c45a9563c14649d55eb1b)
+        ;
+
+        
+    
+    
+            var marker_e43519a9181538c7999a9d98af360b25 = L.marker(
+                [37.47, -121.94],
+                {}
+            ).addTo(map_906d40b0c8662cb1e2f6f5a74eeffc4c);
+        
+    
+            var icon_863d1ab88abe4a59bb622b2999dd5f42 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e43519a9181538c7999a9d98af360b25.setIcon(icon_863d1ab88abe4a59bb622b2999dd5f42);
+        
+    
+        var popup_4fc330db8a5265b0673b631da6039675 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7629677cc8bee04d46b3bc7a2e6af4b9 = $(`<div id="html_7629677cc8bee04d46b3bc7a2e6af4b9" style="width: 100.0%; height: 100.0%;">Viant D&D West</div>`)[0];
+                popup_4fc330db8a5265b0673b631da6039675.setContent(html_7629677cc8bee04d46b3bc7a2e6af4b9);
+            
+        
+
+        marker_e43519a9181538c7999a9d98af360b25.bindPopup(popup_4fc330db8a5265b0673b631da6039675)
+        ;
+
+        
+    
+    
+            var marker_6207b958a6b73915d2452ca5f07764f7 = L.marker(
+                [50.17, 9.57],
+                {}
+            ).addTo(map_906d40b0c8662cb1e2f6f5a74eeffc4c);
+        
+    
+            var icon_1f37c78fad9e7d36cda0338bdd6164d4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_6207b958a6b73915d2452ca5f07764f7.setIcon(icon_1f37c78fad9e7d36cda0338bdd6164d4);
+        
+    
+        var popup_d3211fb826e58574d4978ececb24dd2d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7261b3f54bf41b1ac472e8a3dde26d60 = $(`<div id="html_7261b3f54bf41b1ac472e8a3dde26d60" style="width: 100.0%; height: 100.0%;">Viant Aura</div>`)[0];
+                popup_d3211fb826e58574d4978ececb24dd2d.setContent(html_7261b3f54bf41b1ac472e8a3dde26d60);
+            
+        
+
+        marker_6207b958a6b73915d2452ca5f07764f7.bindPopup(popup_d3211fb826e58574d4978ececb24dd2d)
+        ;
+
+        
+    
+    
+            var marker_ae1c51ff0f25bd640e36b07b3667dd65 = L.marker(
+                [42.9, -85.54],
+                {}
+            ).addTo(map_906d40b0c8662cb1e2f6f5a74eeffc4c);
+        
+    
+            var icon_59aef49cbf83dd12b1f8ca011b5aca38 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ae1c51ff0f25bd640e36b07b3667dd65.setIcon(icon_59aef49cbf83dd12b1f8ca011b5aca38);
+        
+    
+        var popup_f146f9d0a13d061ea0ad2f9e8000f279 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_38a5d4fd2ab90b4296eb9d7b61fa3310 = $(`<div id="html_38a5d4fd2ab90b4296eb9d7b61fa3310" style="width: 100.0%; height: 100.0%;">Viant Grand Rapids</div>`)[0];
+                popup_f146f9d0a13d061ea0ad2f9e8000f279.setContent(html_38a5d4fd2ab90b4296eb9d7b61fa3310);
+            
+        
+
+        marker_ae1c51ff0f25bd640e36b07b3667dd65.bindPopup(popup_f146f9d0a13d061ea0ad2f9e8000f279)
+        ;
+
+        
+    
+    
+            var marker_ff86bd687accf3712e4c4b010244e85d = L.marker(
+                [43.54, -71.48],
+                {}
+            ).addTo(map_906d40b0c8662cb1e2f6f5a74eeffc4c);
+        
+    
+            var icon_8c010e44a0538c41ac88516cde111f2b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ff86bd687accf3712e4c4b010244e85d.setIcon(icon_8c010e44a0538c41ac88516cde111f2b);
+        
+    
+        var popup_d28beb43d7dab2b24972b075049f5bb4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e677509f35144e04892675b6e2ddff08 = $(`<div id="html_e677509f35144e04892675b6e2ddff08" style="width: 100.0%; height: 100.0%;">Viant Laconia</div>`)[0];
+                popup_d28beb43d7dab2b24972b075049f5bb4.setContent(html_e677509f35144e04892675b6e2ddff08);
+            
+        
+
+        marker_ff86bd687accf3712e4c4b010244e85d.bindPopup(popup_d28beb43d7dab2b24972b075049f5bb4)
+        ;
+
+        
+    
+    
+            var marker_9ad58a15d963aec1aa57a16cc9e5f380 = L.marker(
+                [32.51, -117.11],
+                {}
+            ).addTo(map_906d40b0c8662cb1e2f6f5a74eeffc4c);
+        
+    
+            var icon_caed534a9cdfec5e2061615025a91531 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_9ad58a15d963aec1aa57a16cc9e5f380.setIcon(icon_caed534a9cdfec5e2061615025a91531);
+        
+    
+        var popup_eed669c767e36f0ab7f90519906afad3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8ddf080945cc05040ae5262b578c7d04 = $(`<div id="html_8ddf080945cc05040ae5262b578c7d04" style="width: 100.0%; height: 100.0%;">Viant Tijuana</div>`)[0];
+                popup_eed669c767e36f0ab7f90519906afad3.setContent(html_8ddf080945cc05040ae5262b578c7d04);
+            
+        
+
+        marker_9ad58a15d963aec1aa57a16cc9e5f380.bindPopup(popup_eed669c767e36f0ab7f90519906afad3)
+        ;
+
+        
+    
+    
+            var marker_eda93e9c02afde5ba185d6216e29d937 = L.marker(
+                [42.77, -78.77],
+                {}
+            ).addTo(map_906d40b0c8662cb1e2f6f5a74eeffc4c);
+        
+    
+            var icon_82c694743447d227753bf4e8346ddd2c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_eda93e9c02afde5ba185d6216e29d937.setIcon(icon_82c694743447d227753bf4e8346ddd2c);
+        
+    
+        var popup_1276d3ed17ee114bc504b0724fb7140c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_62f6598a409637e75ce8d91d70427b40 = $(`<div id="html_62f6598a409637e75ce8d91d70427b40" style="width: 100.0%; height: 100.0%;">Viant Orchard Park</div>`)[0];
+                popup_1276d3ed17ee114bc504b0724fb7140c.setContent(html_62f6598a409637e75ce8d91d70427b40);
+            
+        
+
+        marker_eda93e9c02afde5ba185d6216e29d937.bindPopup(popup_1276d3ed17ee114bc504b0724fb7140c)
+        ;
+
+        
+    
+    
+            var marker_ed90eb700c32c3acf14784d3acb4ebe9 = L.marker(
+                [18.44, -66.4],
+                {}
+            ).addTo(map_906d40b0c8662cb1e2f6f5a74eeffc4c);
+        
+    
+            var icon_9af2077daac81dbac7dd7921c1f42f22 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ed90eb700c32c3acf14784d3acb4ebe9.setIcon(icon_9af2077daac81dbac7dd7921c1f42f22);
+        
+    
+        var popup_249089af700e6bbff25cb2f683d06c12 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_25bb515c36992ad6dcfb8093fdd95aff = $(`<div id="html_25bb515c36992ad6dcfb8093fdd95aff" style="width: 100.0%; height: 100.0%;">Viant Puerto Rico</div>`)[0];
+                popup_249089af700e6bbff25cb2f683d06c12.setContent(html_25bb515c36992ad6dcfb8093fdd95aff);
+            
+        
+
+        marker_ed90eb700c32c3acf14784d3acb4ebe9.bindPopup(popup_249089af700e6bbff25cb2f683d06c12)
+        ;
+
+        
+    
+    
+            var marker_bac445375042360f3118bb1cf58780ab = L.marker(
+                [29.45, -98.61],
+                {}
+            ).addTo(map_906d40b0c8662cb1e2f6f5a74eeffc4c);
+        
+    
+            var icon_24a4665f701d8fbea9c41aa066d8a1bc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_bac445375042360f3118bb1cf58780ab.setIcon(icon_24a4665f701d8fbea9c41aa066d8a1bc);
+        
+    
+        var popup_e13186a0be5588e08643924bc5edd78e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_51bfca7704f988ae911baa5ca6d014ed = $(`<div id="html_51bfca7704f988ae911baa5ca6d014ed" style="width: 100.0%; height: 100.0%;">Viant San Antonio</div>`)[0];
+                popup_e13186a0be5588e08643924bc5edd78e.setContent(html_51bfca7704f988ae911baa5ca6d014ed);
+            
+        
+
+        marker_bac445375042360f3118bb1cf58780ab.bindPopup(popup_e13186a0be5588e08643924bc5edd78e)
+        ;
+
+        
+    
+    
+            var marker_971f26d423d081150da0acfe483e0942 = L.marker(
+                [40.56, -74.43],
+                {}
+            ).addTo(map_906d40b0c8662cb1e2f6f5a74eeffc4c);
+        
+    
+            var icon_8f773971dbb57a1ed416a7e819b1c3cd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_971f26d423d081150da0acfe483e0942.setIcon(icon_8f773971dbb57a1ed416a7e819b1c3cd);
+        
+    
+        var popup_449ae977378481365c75c4680ecee4c6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9047f45fde7adbf80cab1d2347502d10 = $(`<div id="html_9047f45fde7adbf80cab1d2347502d10" style="width: 100.0%; height: 100.0%;">Viant South Plainfield</div>`)[0];
+                popup_449ae977378481365c75c4680ecee4c6.setContent(html_9047f45fde7adbf80cab1d2347502d10);
+            
+        
+
+        marker_971f26d423d081150da0acfe483e0942.bindPopup(popup_449ae977378481365c75c4680ecee4c6)
+        ;
+
+        
+    
+    
+            var marker_ff11f948d2b8e65c5b9fa95789fae008 = L.marker(
+                [34.1, -117.69],
+                {}
+            ).addTo(map_906d40b0c8662cb1e2f6f5a74eeffc4c);
+        
+    
+            var icon_687158a9d5377bcf5466773e519a955d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ff11f948d2b8e65c5b9fa95789fae008.setIcon(icon_687158a9d5377bcf5466773e519a955d);
+        
+    
+        var popup_43f2b72ed1c91184ad29b049f6e580fa = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_34db6ce136a25ec2fc2fae6e694d63d6 = $(`<div id="html_34db6ce136a25ec2fc2fae6e694d63d6" style="width: 100.0%; height: 100.0%;">Viant Upland</div>`)[0];
+                popup_43f2b72ed1c91184ad29b049f6e580fa.setContent(html_34db6ce136a25ec2fc2fae6e694d63d6);
+            
+        
+
+        marker_ff11f948d2b8e65c5b9fa95789fae008.bindPopup(popup_43f2b72ed1c91184ad29b049f6e580fa)
+        ;
+
+        
+    
+    
+            var marker_1fffd762c3a337cb7bdb52d7ebdfc9df = L.marker(
+                [41.91, -77.59],
+                {}
+            ).addTo(map_906d40b0c8662cb1e2f6f5a74eeffc4c);
+        
+    
+            var icon_cdb4f623803331d03fa6b990ef4166d2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_1fffd762c3a337cb7bdb52d7ebdfc9df.setIcon(icon_cdb4f623803331d03fa6b990ef4166d2);
+        
+    
+        var popup_4bf952bdc8c2c91cbed7382c306e16f5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_569f0130b49c168784b28932d9647861 = $(`<div id="html_569f0130b49c168784b28932d9647861" style="width: 100.0%; height: 100.0%;">Viant Westfield</div>`)[0];
+                popup_4bf952bdc8c2c91cbed7382c306e16f5.setContent(html_569f0130b49c168784b28932d9647861);
+            
+        
+
+        marker_1fffd762c3a337cb7bdb52d7ebdfc9df.bindPopup(popup_4bf952bdc8c2c91cbed7382c306e16f5)
+        ;
+
+        
+    
+    
+            var marker_9be5654c06417c5dd2d43e506486583f = L.marker(
+                [42.12, -87.91],
+                {}
+            ).addTo(map_906d40b0c8662cb1e2f6f5a74eeffc4c);
+        
+    
+            var icon_b5d5e486900d8534c3ee2151f21be5a6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_9be5654c06417c5dd2d43e506486583f.setIcon(icon_b5d5e486900d8534c3ee2151f21be5a6);
+        
+    
+        var popup_b39664347654620946bf6454cda72404 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_96e815d2b0905603fd1e813e28309227 = $(`<div id="html_96e815d2b0905603fd1e813e28309227" style="width: 100.0%; height: 100.0%;">Viant Wheeling</div>`)[0];
+                popup_b39664347654620946bf6454cda72404.setContent(html_96e815d2b0905603fd1e813e28309227);
+            
+        
+
+        marker_9be5654c06417c5dd2d43e506486583f.bindPopup(popup_b39664347654620946bf6454cda72404)
+        ;
+
+        
+    
+    
+            var marker_97e89d54d428c3d9a53d7bb56ba15a7f = L.marker(
+                [42.58, -71.15],
+                {}
+            ).addTo(map_906d40b0c8662cb1e2f6f5a74eeffc4c);
+        
+    
+            var icon_a6cfc44e0d9a062c06f0a4cde60ac935 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_97e89d54d428c3d9a53d7bb56ba15a7f.setIcon(icon_a6cfc44e0d9a062c06f0a4cde60ac935);
+        
+    
+        var popup_fb31c904e0bc49d78197794c4f00a260 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_60b9ecc35ea2589a9077794ae3ea3152 = $(`<div id="html_60b9ecc35ea2589a9077794ae3ea3152" style="width: 100.0%; height: 100.0%;">Viant D&D East</div>`)[0];
+                popup_fb31c904e0bc49d78197794c4f00a260.setContent(html_60b9ecc35ea2589a9077794ae3ea3152);
+            
+        
+
+        marker_97e89d54d428c3d9a53d7bb56ba15a7f.bindPopup(popup_fb31c904e0bc49d78197794c4f00a260)
+        ;
+
+        
+    
+    
+            var marker_2b8f31a5cdabf7165efef0cb2f56529d = L.marker(
+                [53.71, -2.18],
+                {}
+            ).addTo(map_906d40b0c8662cb1e2f6f5a74eeffc4c);
+        
+    
+            var icon_512b1dfe4b2fd89672b538db41afec8d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_2b8f31a5cdabf7165efef0cb2f56529d.setIcon(icon_512b1dfe4b2fd89672b538db41afec8d);
+        
+    
+        var popup_4f24bfdfe2dbaf51cfe7caf098d87c8e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a555ddd505841838d9048ec61b8fd1a4 = $(`<div id="html_a555ddd505841838d9048ec61b8fd1a4" style="width: 100.0%; height: 100.0%;">Viant Orthoplastics</div>`)[0];
+                popup_4f24bfdfe2dbaf51cfe7caf098d87c8e.setContent(html_a555ddd505841838d9048ec61b8fd1a4);
+            
+        
+
+        marker_2b8f31a5cdabf7165efef0cb2f56529d.bindPopup(popup_4f24bfdfe2dbaf51cfe7caf098d87c8e)
+        ;
+
+        
+    
+    
+            var marker_d0d4028720e7c75ad34d03957b78099d = L.marker(
+                [-37.4504, 177.7279],
+                {}
+            ).addTo(map_906d40b0c8662cb1e2f6f5a74eeffc4c);
+        
+    
+            var icon_73c10ff40735f7084e39f7ff5c919858 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_d0d4028720e7c75ad34d03957b78099d.setIcon(icon_73c10ff40735f7084e39f7ff5c919858);
+        
+    
+        var popup_280094090a863f17d9d1f64d68037015 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f7248106082ec47ec17df12da18fbb76 = $(`<div id="html_f7248106082ec47ec17df12da18fbb76" style="width: 100.0%; height: 100.0%;">Disaster: Earthquake in New Zealand (EQ)</div>`)[0];
+                popup_280094090a863f17d9d1f64d68037015.setContent(html_f7248106082ec47ec17df12da18fbb76);
+            
+        
+
+        marker_d0d4028720e7c75ad34d03957b78099d.bindPopup(popup_280094090a863f17d9d1f64d68037015)
+        ;
+
+        
+    
+    
+            var marker_44ef8128b3aed93c3727a01c52daa6cf = L.marker(
+                [39.5156, 141.8333],
+                {}
+            ).addTo(map_906d40b0c8662cb1e2f6f5a74eeffc4c);
+        
+    
+            var icon_5cfd2966c3d9cb3b005b72ce15a25c09 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_44ef8128b3aed93c3727a01c52daa6cf.setIcon(icon_5cfd2966c3d9cb3b005b72ce15a25c09);
+        
+    
+        var popup_bfe58184f5b3f36ec58a521dafa85ec2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_130df2adb38fd2660539b31bf962b28a = $(`<div id="html_130df2adb38fd2660539b31bf962b28a" style="width: 100.0%; height: 100.0%;">Disaster: Earthquake in Japan (EQ)</div>`)[0];
+                popup_bfe58184f5b3f36ec58a521dafa85ec2.setContent(html_130df2adb38fd2660539b31bf962b28a);
+            
+        
+
+        marker_44ef8128b3aed93c3727a01c52daa6cf.bindPopup(popup_bfe58184f5b3f36ec58a521dafa85ec2)
+        ;
+
+        
+    
+    
+            var marker_c4b9d5c7e70198e30b1f697ea408e28e = L.marker(
+                [9.7423, 126.3303],
+                {}
+            ).addTo(map_906d40b0c8662cb1e2f6f5a74eeffc4c);
+        
+    
+            var icon_ee3f2e95cbfcfca762bb0c6128fc6142 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_c4b9d5c7e70198e30b1f697ea408e28e.setIcon(icon_ee3f2e95cbfcfca762bb0c6128fc6142);
+        
+    
+        var popup_687260baebdf528c9137608ec4b3ac82 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f894decbc70c6846386c3b5f94bab6aa = $(`<div id="html_f894decbc70c6846386c3b5f94bab6aa" style="width: 100.0%; height: 100.0%;">Disaster: Earthquake in Philippines (EQ)</div>`)[0];
+                popup_687260baebdf528c9137608ec4b3ac82.setContent(html_f894decbc70c6846386c3b5f94bab6aa);
+            
+        
+
+        marker_c4b9d5c7e70198e30b1f697ea408e28e.bindPopup(popup_687260baebdf528c9137608ec4b3ac82)
+        ;
+
+        
+    
+    
+            var marker_6bb7afc3b2c5b11361dc352db6707095 = L.marker(
+                [12.9367, 145.3842],
+                {}
+            ).addTo(map_906d40b0c8662cb1e2f6f5a74eeffc4c);
+        
+    
+            var icon_4d166371b8423ea0c4dcb6d4f4312dcd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_6bb7afc3b2c5b11361dc352db6707095.setIcon(icon_4d166371b8423ea0c4dcb6d4f4312dcd);
+        
+    
+        var popup_bcd49a8da6679e9389c0738b17e821c0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f4a3a05d896d01c58d4ee0eccff1ece7 = $(`<div id="html_f4a3a05d896d01c58d4ee0eccff1ece7" style="width: 100.0%; height: 100.0%;">Disaster: Earthquake in Guam (EQ)</div>`)[0];
+                popup_bcd49a8da6679e9389c0738b17e821c0.setContent(html_f4a3a05d896d01c58d4ee0eccff1ece7);
+            
+        
+
+        marker_6bb7afc3b2c5b11361dc352db6707095.bindPopup(popup_bcd49a8da6679e9389c0738b17e821c0)
+        ;
+
+        
+    
+    
+            var marker_7477d3ec77ced0e7c34f830e183b1ef0 = L.marker(
+                [55.8833, 164.5274],
+                {}
+            ).addTo(map_906d40b0c8662cb1e2f6f5a74eeffc4c);
+        
+    
+            var icon_734576f6b989f63d23dd288d04523e87 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_7477d3ec77ced0e7c34f830e183b1ef0.setIcon(icon_734576f6b989f63d23dd288d04523e87);
+        
+    
+        var popup_564560b9e1b32cc88ea6ff7af8fda902 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7a3e5b45de2433099713fb0dfcba6e34 = $(`<div id="html_7a3e5b45de2433099713fb0dfcba6e34" style="width: 100.0%; height: 100.0%;">Disaster: Earthquake in Russia (EQ)</div>`)[0];
+                popup_564560b9e1b32cc88ea6ff7af8fda902.setContent(html_7a3e5b45de2433099713fb0dfcba6e34);
+            
+        
+
+        marker_7477d3ec77ced0e7c34f830e183b1ef0.bindPopup(popup_564560b9e1b32cc88ea6ff7af8fda902)
+        ;
+
+        
+    
+    
+            var marker_c7d59036c1e32589a16eb08e441333f7 = L.marker(
+                [-14.8908, 167.9294],
+                {}
+            ).addTo(map_906d40b0c8662cb1e2f6f5a74eeffc4c);
+        
+    
+            var icon_f7984879c29386c000fbd72cd4016014 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_c7d59036c1e32589a16eb08e441333f7.setIcon(icon_f7984879c29386c000fbd72cd4016014);
+        
+    
+        var popup_7156e844b86a0c3314f71dccd8a1973d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d9c37052c1dc5d4667879ec2b3483d06 = $(`<div id="html_d9c37052c1dc5d4667879ec2b3483d06" style="width: 100.0%; height: 100.0%;">Disaster: Earthquake in Vanuatu (EQ)</div>`)[0];
+                popup_7156e844b86a0c3314f71dccd8a1973d.setContent(html_d9c37052c1dc5d4667879ec2b3483d06);
+            
+        
+
+        marker_c7d59036c1e32589a16eb08e441333f7.bindPopup(popup_7156e844b86a0c3314f71dccd8a1973d)
+        ;
+
+        
+    
+    
+            var marker_a27323bfb381f7500854c2bd4a5f6211 = L.marker(
+                [-7.2568, 105.9454],
+                {}
+            ).addTo(map_906d40b0c8662cb1e2f6f5a74eeffc4c);
+        
+    
+            var icon_3d2da1a44391d7e99bbb94e6082f9ae7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_a27323bfb381f7500854c2bd4a5f6211.setIcon(icon_3d2da1a44391d7e99bbb94e6082f9ae7);
+        
+    
+        var popup_4d29df35c61293a6e36d3654f1f5b237 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ff73fa4cd9b6305aadb9aff36fcd5938 = $(`<div id="html_ff73fa4cd9b6305aadb9aff36fcd5938" style="width: 100.0%; height: 100.0%;">Disaster: Earthquake in Indonesia (EQ)</div>`)[0];
+                popup_4d29df35c61293a6e36d3654f1f5b237.setContent(html_ff73fa4cd9b6305aadb9aff36fcd5938);
+            
+        
+
+        marker_a27323bfb381f7500854c2bd4a5f6211.bindPopup(popup_4d29df35c61293a6e36d3654f1f5b237)
+        ;
+
+        
+    
+    
+            var marker_854b99c72f3d9517782f6b81272f9007 = L.marker(
+                [-7.0343, 124.9298],
+                {}
+            ).addTo(map_906d40b0c8662cb1e2f6f5a74eeffc4c);
+        
+    
+            var icon_368cac2c121b35fec82b6185f6f71c56 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_854b99c72f3d9517782f6b81272f9007.setIcon(icon_368cac2c121b35fec82b6185f6f71c56);
+        
+    
+        var popup_86e17db4047cd52e4edeaa46a762ee13 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d264a54e0789dc791736930479b597fc = $(`<div id="html_d264a54e0789dc791736930479b597fc" style="width: 100.0%; height: 100.0%;">Disaster: Earthquake in Indonesia (EQ)</div>`)[0];
+                popup_86e17db4047cd52e4edeaa46a762ee13.setContent(html_d264a54e0789dc791736930479b597fc);
+            
+        
+
+        marker_854b99c72f3d9517782f6b81272f9007.bindPopup(popup_86e17db4047cd52e4edeaa46a762ee13)
+        ;
+
+        
+    
+    
+            var marker_c2e4df5ef042e02649269ca942417908 = L.marker(
+                [-28.7596711, -70.4861108],
+                {}
+            ).addTo(map_906d40b0c8662cb1e2f6f5a74eeffc4c);
+        
+    
+            var icon_ec0de80a8f18de92c668ded63cca049e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_c2e4df5ef042e02649269ca942417908.setIcon(icon_ec0de80a8f18de92c668ded63cca049e);
+        
+    
+        var popup_b9e57dad74c63ea28a5041c5e6350720 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d4167ddde07486a51ae31c812c084f76 = $(`<div id="html_d4167ddde07486a51ae31c812c084f76" style="width: 100.0%; height: 100.0%;">Disaster: Flood in Chile (FL)</div>`)[0];
+                popup_b9e57dad74c63ea28a5041c5e6350720.setContent(html_d4167ddde07486a51ae31c812c084f76);
+            
+        
+
+        marker_c2e4df5ef042e02649269ca942417908.bindPopup(popup_b9e57dad74c63ea28a5041c5e6350720)
+        ;
+
+        
+    
+    
+            var marker_d9aeb74ee9a6964a9900d17cdda4eadc = L.marker(
+                [28.2203911, 61.2137052],
+                {}
+            ).addTo(map_906d40b0c8662cb1e2f6f5a74eeffc4c);
+        
+    
+            var icon_c5a3d16d49738c40827f8c70a6078767 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_d9aeb74ee9a6964a9900d17cdda4eadc.setIcon(icon_c5a3d16d49738c40827f8c70a6078767);
+        
+    
+        var popup_dbe0db72a98d3a38ca27cf8189777f67 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6d757f24f85d2ce3688ac509cbcb8738 = $(`<div id="html_6d757f24f85d2ce3688ac509cbcb8738" style="width: 100.0%; height: 100.0%;">Disaster: Flood in Islamic Republic of Iran (FL)</div>`)[0];
+                popup_dbe0db72a98d3a38ca27cf8189777f67.setContent(html_6d757f24f85d2ce3688ac509cbcb8738);
+            
+        
+
+        marker_d9aeb74ee9a6964a9900d17cdda4eadc.bindPopup(popup_dbe0db72a98d3a38ca27cf8189777f67)
+        ;
+
+        
+    
+    
+            var marker_accfd95c5bd98daa026b93f733f0687c = L.marker(
+                [-30.864167, 30.368611],
+                {}
+            ).addTo(map_906d40b0c8662cb1e2f6f5a74eeffc4c);
+        
+    
+            var icon_312970618914af3b66d8b52f23a4c83b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_accfd95c5bd98daa026b93f733f0687c.setIcon(icon_312970618914af3b66d8b52f23a4c83b);
+        
+    
+        var popup_b6cbca53df4a306fc30d21fc6fb255d6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a09ba4301a762a225ad8007ad37d114d = $(`<div id="html_a09ba4301a762a225ad8007ad37d114d" style="width: 100.0%; height: 100.0%;">Disaster: Flood in South Africa (FL)</div>`)[0];
+                popup_b6cbca53df4a306fc30d21fc6fb255d6.setContent(html_a09ba4301a762a225ad8007ad37d114d);
+            
+        
+
+        marker_accfd95c5bd98daa026b93f733f0687c.bindPopup(popup_b6cbca53df4a306fc30d21fc6fb255d6)
+        ;
+
+        
+    
+    
+            var marker_1e882cdfcd577c4c20f450db4826c3f5 = L.marker(
+                [7.187, -77.142],
+                {}
+            ).addTo(map_906d40b0c8662cb1e2f6f5a74eeffc4c);
+        
+    
+            var icon_a4ca7b8966faa7faf46989ca738f2818 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_1e882cdfcd577c4c20f450db4826c3f5.setIcon(icon_a4ca7b8966faa7faf46989ca738f2818);
+        
+    
+        var popup_add77b00d440d298ffea236ab88a2078 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ef4c2056f481867bc1976810f9fcf190 = $(`<div id="html_ef4c2056f481867bc1976810f9fcf190" style="width: 100.0%; height: 100.0%;">Disaster: Drought in Colombia, Panama (DR)</div>`)[0];
+                popup_add77b00d440d298ffea236ab88a2078.setContent(html_ef4c2056f481867bc1976810f9fcf190);
+            
+        
+
+        marker_1e882cdfcd577c4c20f450db4826c3f5.bindPopup(popup_add77b00d440d298ffea236ab88a2078)
+        ;
+
+        
+    
+    
+            var marker_3d20e36dfff5b951130606dd5a714c20 = L.marker(
+                [-31.766, 26.484],
+                {}
+            ).addTo(map_906d40b0c8662cb1e2f6f5a74eeffc4c);
+        
+    
+            var icon_b4e4a01ffa4309ce7e93d399a220ba4e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_3d20e36dfff5b951130606dd5a714c20.setIcon(icon_b4e4a01ffa4309ce7e93d399a220ba4e);
+        
+    
+        var popup_88809e28a1655eaf9d2631f0584aec3c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d416f6b7bbd4c53a71e1d080df2efd14 = $(`<div id="html_d416f6b7bbd4c53a71e1d080df2efd14" style="width: 100.0%; height: 100.0%;">Disaster: Drought in Lesotho, South Africa (DR)</div>`)[0];
+                popup_88809e28a1655eaf9d2631f0584aec3c.setContent(html_d416f6b7bbd4c53a71e1d080df2efd14);
+            
+        
+
+        marker_3d20e36dfff5b951130606dd5a714c20.bindPopup(popup_88809e28a1655eaf9d2631f0584aec3c)
+        ;
+
+        
+    
+    
+            var marker_7091936222b573cf46dea5f6fba8f8ae = L.marker(
+                [-20.522, 120.352],
+                {}
+            ).addTo(map_906d40b0c8662cb1e2f6f5a74eeffc4c);
+        
+    
+            var icon_d9dd228f871ed09b6b2d2c7022f6ea69 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_7091936222b573cf46dea5f6fba8f8ae.setIcon(icon_d9dd228f871ed09b6b2d2c7022f6ea69);
+        
+    
+        var popup_f37c0ccb38d47fa3fedfb1697773ba84 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9fc2f00b955bedaa9c445a8ac505d4f3 = $(`<div id="html_9fc2f00b955bedaa9c445a8ac505d4f3" style="width: 100.0%; height: 100.0%;">Disaster: Drought in Australia (DR)</div>`)[0];
+                popup_f37c0ccb38d47fa3fedfb1697773ba84.setContent(html_9fc2f00b955bedaa9c445a8ac505d4f3);
+            
+        
+
+        marker_7091936222b573cf46dea5f6fba8f8ae.bindPopup(popup_f37c0ccb38d47fa3fedfb1697773ba84)
+        ;
+
+        
+    
+    
+            var marker_17d3fd5f3f5f73bff4fef3a392fd106a = L.marker(
+                [-29.035, -67.592],
+                {}
+            ).addTo(map_906d40b0c8662cb1e2f6f5a74eeffc4c);
+        
+    
+            var icon_5a8595957cb093cb0e0043e41b17b58f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_17d3fd5f3f5f73bff4fef3a392fd106a.setIcon(icon_5a8595957cb093cb0e0043e41b17b58f);
+        
+    
+        var popup_f9a1e235442334b47abea0191e1fff82 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2097c04921a676c6bbbc616788be9ccd = $(`<div id="html_2097c04921a676c6bbbc616788be9ccd" style="width: 100.0%; height: 100.0%;">Disaster: Drought in Argentina, Chile (DR)</div>`)[0];
+                popup_f9a1e235442334b47abea0191e1fff82.setContent(html_2097c04921a676c6bbbc616788be9ccd);
+            
+        
+
+        marker_17d3fd5f3f5f73bff4fef3a392fd106a.bindPopup(popup_f9a1e235442334b47abea0191e1fff82)
+        ;
+
+        
+    
+    
+            var marker_533521bb2a4422b1427d59cb927d72a7 = L.marker(
+                [34.089, 72.108],
+                {}
+            ).addTo(map_906d40b0c8662cb1e2f6f5a74eeffc4c);
+        
+    
+            var icon_b531103ba61dcc0c6980cce29c72f537 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_533521bb2a4422b1427d59cb927d72a7.setIcon(icon_b531103ba61dcc0c6980cce29c72f537);
+        
+    
+        var popup_618b5fe4582e09de981689cd5693ba54 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7692b4cbe765b7b8ad9b9a7037ab662b = $(`<div id="html_7692b4cbe765b7b8ad9b9a7037ab662b" style="width: 100.0%; height: 100.0%;">Disaster: Drought in Afghanistan, Islamic Republic of Iran, Kyrgyzstan, Kazakhstan, Pakistan, Tajikistan, Turkmenistan, Uzbekistan (DR)</div>`)[0];
+                popup_618b5fe4582e09de981689cd5693ba54.setContent(html_7692b4cbe765b7b8ad9b9a7037ab662b);
+            
+        
+
+        marker_533521bb2a4422b1427d59cb927d72a7.bindPopup(popup_618b5fe4582e09de981689cd5693ba54)
+        ;
+
+        
+    
+    
+            var marker_bf2b677eca8b88a6507abab8bacf8f0d = L.marker(
+                [40.996, -93.65],
+                {}
+            ).addTo(map_906d40b0c8662cb1e2f6f5a74eeffc4c);
+        
+    
+            var icon_313c2240f6021dcb57aabacf0c41e244 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_bf2b677eca8b88a6507abab8bacf8f0d.setIcon(icon_313c2240f6021dcb57aabacf0c41e244);
+        
+    
+        var popup_309b71407650133155fc7860af797e98 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_52498802ab4677cd8ff047c2109b2961 = $(`<div id="html_52498802ab4677cd8ff047c2109b2961" style="width: 100.0%; height: 100.0%;">Disaster: Drought in United States (DR)</div>`)[0];
+                popup_309b71407650133155fc7860af797e98.setContent(html_52498802ab4677cd8ff047c2109b2961);
+            
+        
+
+        marker_bf2b677eca8b88a6507abab8bacf8f0d.bindPopup(popup_309b71407650133155fc7860af797e98)
+        ;
+
+        
+    
+    
+            var marker_b565d7478b3be44c74f856ad9b11a5ce = L.marker(
+                [33.5, -92.5],
+                {}
+            ).addTo(map_906d40b0c8662cb1e2f6f5a74eeffc4c);
+        
+    
+            var icon_b2adc0fe01c7ce26035fb00901a28d33 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_b565d7478b3be44c74f856ad9b11a5ce.setIcon(icon_b2adc0fe01c7ce26035fb00901a28d33);
+        
+    
+        var popup_e27ec730cd5add514b50acd00ecbac09 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_31b1b25bb6116b7f513f06428ade2230 = $(`<div id="html_31b1b25bb6116b7f513f06428ade2230" style="width: 100.0%; height: 100.0%;">Disaster: Drought in United States (DR)</div>`)[0];
+                popup_e27ec730cd5add514b50acd00ecbac09.setContent(html_31b1b25bb6116b7f513f06428ade2230);
+            
+        
+
+        marker_b565d7478b3be44c74f856ad9b11a5ce.bindPopup(popup_e27ec730cd5add514b50acd00ecbac09)
+        ;
+
+        
+    
+    
+            var marker_d109b90b434dd849cbca2e1b2d5adb75 = L.marker(
+                [45.5, 26.5],
+                {}
+            ).addTo(map_906d40b0c8662cb1e2f6f5a74eeffc4c);
+        
+    
+            var icon_971cbcc6625ce5653e51971ff83d9893 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_d109b90b434dd849cbca2e1b2d5adb75.setIcon(icon_971cbcc6625ce5653e51971ff83d9893);
+        
+    
+        var popup_e828938c7cd72612940c5e200fda4d2c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_860505070104c4a4326aaebab2361ace = $(`<div id="html_860505070104c4a4326aaebab2361ace" style="width: 100.0%; height: 100.0%;">Disaster: Drought in Bulgaria, Romania, Serbia, Ukraine (DR)</div>`)[0];
+                popup_e828938c7cd72612940c5e200fda4d2c.setContent(html_860505070104c4a4326aaebab2361ace);
+            
+        
+
+        marker_d109b90b434dd849cbca2e1b2d5adb75.bindPopup(popup_e828938c7cd72612940c5e200fda4d2c)
+        ;
+
+        
+    
+    
+            var marker_22ca95cfc9def30e48117a73133fa1c4 = L.marker(
+                [-16.538, -56.062],
+                {}
+            ).addTo(map_906d40b0c8662cb1e2f6f5a74eeffc4c);
+        
+    
+            var icon_d12d4d4d98c1e0aba351b3c5107a34b2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_22ca95cfc9def30e48117a73133fa1c4.setIcon(icon_d12d4d4d98c1e0aba351b3c5107a34b2);
+        
+    
+        var popup_d27e4bc68f46f54f9772bf0940881655 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_25b3066a5fd6666adabff11bd1cd8188 = $(`<div id="html_25b3066a5fd6666adabff11bd1cd8188" style="width: 100.0%; height: 100.0%;">Disaster: Drought in Argentina, Bolivia, Brazil, Colombia, Guyana, Peru, Paraguay, Suriname, Trinidad  and  Tobago, Venezuela (DR)</div>`)[0];
+                popup_d27e4bc68f46f54f9772bf0940881655.setContent(html_25b3066a5fd6666adabff11bd1cd8188);
+            
+        
+
+        marker_22ca95cfc9def30e48117a73133fa1c4.bindPopup(popup_d27e4bc68f46f54f9772bf0940881655)
+        ;
+
+        
+    
+    
+            var marker_a776f73c214d92cb290f2ffeccb67d2e = L.marker(
+                [39.858, 14.131],
+                {}
+            ).addTo(map_906d40b0c8662cb1e2f6f5a74eeffc4c);
+        
+    
+            var icon_02f40c1b06e7c88df4c4ef9df8f43b86 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_a776f73c214d92cb290f2ffeccb67d2e.setIcon(icon_02f40c1b06e7c88df4c4ef9df8f43b86);
+        
+    
+        var popup_f43d850aacc70ddedf74613b9443657b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_579bc6ccfc5489ebfa03c7169e090961 = $(`<div id="html_579bc6ccfc5489ebfa03c7169e090961" style="width: 100.0%; height: 100.0%;">Disaster: Drought in Cyprus, Spain, France, Greece, Italy, Malta, San Marino, Türkiye (DR)</div>`)[0];
+                popup_f43d850aacc70ddedf74613b9443657b.setContent(html_579bc6ccfc5489ebfa03c7169e090961);
+            
+        
+
+        marker_a776f73c214d92cb290f2ffeccb67d2e.bindPopup(popup_f43d850aacc70ddedf74613b9443657b)
+        ;
+
+        
+    
+    
+            var marker_aafebd011d167f230ca0789fea0f22c0 = L.marker(
+                [-5.341, 104.537],
+                {}
+            ).addTo(map_906d40b0c8662cb1e2f6f5a74eeffc4c);
+        
+    
+            var icon_4628f6c4a17fe5d5fbd56e7f3c6e8483 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_aafebd011d167f230ca0789fea0f22c0.setIcon(icon_4628f6c4a17fe5d5fbd56e7f3c6e8483);
+        
+    
+        var popup_0583385b816e7bc29104b065c8d1f0fc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3d1f1c9ac9e2c3a53a161f18faa9b3f1 = $(`<div id="html_3d1f1c9ac9e2c3a53a161f18faa9b3f1" style="width: 100.0%; height: 100.0%;">Disaster: Drought in Indonesia (DR)</div>`)[0];
+                popup_0583385b816e7bc29104b065c8d1f0fc.setContent(html_3d1f1c9ac9e2c3a53a161f18faa9b3f1);
+            
+        
+
+        marker_aafebd011d167f230ca0789fea0f22c0.bindPopup(popup_0583385b816e7bc29104b065c8d1f0fc)
+        ;
+
+        
+    
+    
+            var marker_be0c34753a4c8b3101e7576c5abd0a8f = L.marker(
+                [32.664, -3.003],
+                {}
+            ).addTo(map_906d40b0c8662cb1e2f6f5a74eeffc4c);
+        
+    
+            var icon_b38ff3858f6766d3af1571fe1d56f80a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_be0c34753a4c8b3101e7576c5abd0a8f.setIcon(icon_b38ff3858f6766d3af1571fe1d56f80a);
+        
+    
+        var popup_76f0d0d17db193c92b2d72f7d80c103a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0ee185cb1c094db8c84959e9173cc194 = $(`<div id="html_0ee185cb1c094db8c84959e9173cc194" style="width: 100.0%; height: 100.0%;">Disaster: Drought in Algeria, Spain, Morocco, Tunisia (DR)</div>`)[0];
+                popup_76f0d0d17db193c92b2d72f7d80c103a.setContent(html_0ee185cb1c094db8c84959e9173cc194);
+            
+        
+
+        marker_be0c34753a4c8b3101e7576c5abd0a8f.bindPopup(popup_76f0d0d17db193c92b2d72f7d80c103a)
+        ;
+
+        
+    
+    
+            var marker_78c3b00e6e19a400ea339a17b23da85f = L.marker(
+                [-33.501, 118.0],
+                {}
+            ).addTo(map_906d40b0c8662cb1e2f6f5a74eeffc4c);
+        
+    
+            var icon_14d6938b18c74070ecd5c12678fbdb7a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_78c3b00e6e19a400ea339a17b23da85f.setIcon(icon_14d6938b18c74070ecd5c12678fbdb7a);
+        
+    
+        var popup_6799504ec0d5da7afa42447a615589c1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5bf15964f09a92badb9831f30e4b1cf4 = $(`<div id="html_5bf15964f09a92badb9831f30e4b1cf4" style="width: 100.0%; height: 100.0%;">Disaster: Drought in Australia (DR)</div>`)[0];
+                popup_6799504ec0d5da7afa42447a615589c1.setContent(html_5bf15964f09a92badb9831f30e4b1cf4);
+            
+        
+
+        marker_78c3b00e6e19a400ea339a17b23da85f.bindPopup(popup_6799504ec0d5da7afa42447a615589c1)
+        ;
+
+        
+    
+    
+            var marker_40dd2ad408b7db35d95e9abb7ca6a7e4 = L.marker(
+                [-25.501, 18.0],
+                {}
+            ).addTo(map_906d40b0c8662cb1e2f6f5a74eeffc4c);
+        
+    
+            var icon_c46297719796726f3d062d246b3af367 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_40dd2ad408b7db35d95e9abb7ca6a7e4.setIcon(icon_c46297719796726f3d062d246b3af367);
+        
+    
+        var popup_3a8b52016cdc7838e293d9a2fa3136ae = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c1edddd51f84e7138c04f6fc69747153 = $(`<div id="html_c1edddd51f84e7138c04f6fc69747153" style="width: 100.0%; height: 100.0%;">Disaster: Drought in Namibia (DR)</div>`)[0];
+                popup_3a8b52016cdc7838e293d9a2fa3136ae.setContent(html_c1edddd51f84e7138c04f6fc69747153);
+            
+        
+
+        marker_40dd2ad408b7db35d95e9abb7ca6a7e4.bindPopup(popup_3a8b52016cdc7838e293d9a2fa3136ae)
+        ;
+
+        
+    
+    
+            var marker_3f8f3958aaa82b2feacd9f192dada3aa = L.marker(
+                [-20.738, 44.473],
+                {}
+            ).addTo(map_906d40b0c8662cb1e2f6f5a74eeffc4c);
+        
+    
+            var icon_cd115ed3672b6119b8914d5fa7972166 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_3f8f3958aaa82b2feacd9f192dada3aa.setIcon(icon_cd115ed3672b6119b8914d5fa7972166);
+        
+    
+        var popup_0c29f76b1813f528964402f67fa6c8d9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e2ddfc0e6ac139da14959c7e60d234d2 = $(`<div id="html_e2ddfc0e6ac139da14959c7e60d234d2" style="width: 100.0%; height: 100.0%;">Disaster: Drought in Madagascar (DR)</div>`)[0];
+                popup_0c29f76b1813f528964402f67fa6c8d9.setContent(html_e2ddfc0e6ac139da14959c7e60d234d2);
+            
+        
+
+        marker_3f8f3958aaa82b2feacd9f192dada3aa.bindPopup(popup_0c29f76b1813f528964402f67fa6c8d9)
+        ;
+
+        
+    
+    
+            var marker_d81c8ab4f81464550f74e1d900aa4949 = L.marker(
+                [-50.938, -72.022],
+                {}
+            ).addTo(map_906d40b0c8662cb1e2f6f5a74eeffc4c);
+        
+    
+            var icon_99b3361f7e13ab55745dcad32866a7b4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_d81c8ab4f81464550f74e1d900aa4949.setIcon(icon_99b3361f7e13ab55745dcad32866a7b4);
+        
+    
+        var popup_ecb2fca6f586cfd66381c22f9b6e0bbc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ab7255c17d12de021b48b0675d4c5a22 = $(`<div id="html_ab7255c17d12de021b48b0675d4c5a22" style="width: 100.0%; height: 100.0%;">Disaster: Drought in Argentina, Chile (DR)</div>`)[0];
+                popup_ecb2fca6f586cfd66381c22f9b6e0bbc.setContent(html_ab7255c17d12de021b48b0675d4c5a22);
+            
+        
+
+        marker_d81c8ab4f81464550f74e1d900aa4949.bindPopup(popup_ecb2fca6f586cfd66381c22f9b6e0bbc)
+        ;
+
+        
+    
+    
+            var marker_7c8fedf71623865af6bd6f9bf0c3246d = L.marker(
+                [30.353, 25.492],
+                {}
+            ).addTo(map_906d40b0c8662cb1e2f6f5a74eeffc4c);
+        
+    
+            var icon_0894d7fad2881f972a90c8810abdcc3b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_7c8fedf71623865af6bd6f9bf0c3246d.setIcon(icon_0894d7fad2881f972a90c8810abdcc3b);
+        
+    
+        var popup_ac4561cb85308576cc62ecff4af2c096 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_49eb8caf23c8b1aa36ffbccb9cea6488 = $(`<div id="html_49eb8caf23c8b1aa36ffbccb9cea6488" style="width: 100.0%; height: 100.0%;">Disaster: Drought in Egypt, Israel, Libya (DR)</div>`)[0];
+                popup_ac4561cb85308576cc62ecff4af2c096.setContent(html_49eb8caf23c8b1aa36ffbccb9cea6488);
+            
+        
+
+        marker_7c8fedf71623865af6bd6f9bf0c3246d.bindPopup(popup_ac4561cb85308576cc62ecff4af2c096)
+        ;
+
+        
+    
+    
+            var marker_8fb313daa197f4608a8564c0432627d8 = L.marker(
+                [-16.142, 27.58],
+                {}
+            ).addTo(map_906d40b0c8662cb1e2f6f5a74eeffc4c);
+        
+    
+            var icon_9a25094a89de401c79b2233816d6555d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_8fb313daa197f4608a8564c0432627d8.setIcon(icon_9a25094a89de401c79b2233816d6555d);
+        
+    
+        var popup_fdc3ca5210c8815f967d99dca9e29f44 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8e658baadb535b428aa271c3caf0d513 = $(`<div id="html_8e658baadb535b428aa271c3caf0d513" style="width: 100.0%; height: 100.0%;">Disaster: Drought in Angola, Botswana, Democratic Republic of Congo, Malawi, Mozambique, Namibia, Zambia, Zimbabwe (DR)</div>`)[0];
+                popup_fdc3ca5210c8815f967d99dca9e29f44.setContent(html_8e658baadb535b428aa271c3caf0d513);
+            
+        
+
+        marker_8fb313daa197f4608a8564c0432627d8.bindPopup(popup_fdc3ca5210c8815f967d99dca9e29f44)
+        ;
+
+        
+    
+    
+            var marker_8460cc197ae4c508e712beda53eb7e82 = L.marker(
+                [29.4708, 131.7355],
+                {}
+            ).addTo(map_906d40b0c8662cb1e2f6f5a74eeffc4c);
+        
+    
+            var icon_3370d457d7b6526907d78551746b31b0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_8460cc197ae4c508e712beda53eb7e82.setIcon(icon_3370d457d7b6526907d78551746b31b0);
+        
+    
+        var popup_59654d79280903ba1d5145bcd7a52556 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1c26105a2f1558e70567e10594e8b544 = $(`<div id="html_1c26105a2f1558e70567e10594e8b544" style="width: 100.0%; height: 100.0%;">Disaster: Earthquake in Japan (EQ)</div>`)[0];
+                popup_59654d79280903ba1d5145bcd7a52556.setContent(html_1c26105a2f1558e70567e10594e8b544);
+            
+        
+
+        marker_8460cc197ae4c508e712beda53eb7e82.bindPopup(popup_59654d79280903ba1d5145bcd7a52556)
+        ;
+
+        
+    
+    
+            var marker_20440513eb6a998038eb5cb1c8728a6b = L.marker(
+                [52.5633, 172.7784],
+                {}
+            ).addTo(map_906d40b0c8662cb1e2f6f5a74eeffc4c);
+        
+    
+            var icon_4e408fa30bcce7d82968e7da6d0b5293 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_20440513eb6a998038eb5cb1c8728a6b.setIcon(icon_4e408fa30bcce7d82968e7da6d0b5293);
+        
+    
+        var popup_916ca9c17aa2de96b8954a466657f319 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c68e21fe6f3e4a35d997fc37aef47cf7 = $(`<div id="html_c68e21fe6f3e4a35d997fc37aef47cf7" style="width: 100.0%; height: 100.0%;">Disaster: Earthquake in United States (EQ)</div>`)[0];
+                popup_916ca9c17aa2de96b8954a466657f319.setContent(html_c68e21fe6f3e4a35d997fc37aef47cf7);
+            
+        
+
+        marker_20440513eb6a998038eb5cb1c8728a6b.bindPopup(popup_916ca9c17aa2de96b8954a466657f319)
+        ;
+
+        
+    
+    
+            var marker_7f4acc6cebd39fff4746b940ba6b7af9 = L.marker(
+                [-6.2966, 150.4474],
+                {}
+            ).addTo(map_906d40b0c8662cb1e2f6f5a74eeffc4c);
+        
+    
+            var icon_9cbd7ebb1a1154bff64786c63f791e78 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_7f4acc6cebd39fff4746b940ba6b7af9.setIcon(icon_9cbd7ebb1a1154bff64786c63f791e78);
+        
+    
+        var popup_1cb157d67a63d45ececfc37f306c1004 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2c40bbe873c16e1b3e650195341977ec = $(`<div id="html_2c40bbe873c16e1b3e650195341977ec" style="width: 100.0%; height: 100.0%;">Disaster: Earthquake in Papua New Guinea (EQ)</div>`)[0];
+                popup_1cb157d67a63d45ececfc37f306c1004.setContent(html_2c40bbe873c16e1b3e650195341977ec);
+            
+        
+
+        marker_7f4acc6cebd39fff4746b940ba6b7af9.bindPopup(popup_1cb157d67a63d45ececfc37f306c1004)
+        ;
+
+        
+    
+    
+            var marker_197a495c85fad7e58987960c2e739d03 = L.marker(
+                [-5.2285, 151.8925],
+                {}
+            ).addTo(map_906d40b0c8662cb1e2f6f5a74eeffc4c);
+        
+    
+            var icon_0a3df9b49f8cf6d80acab8f479a6988d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_197a495c85fad7e58987960c2e739d03.setIcon(icon_0a3df9b49f8cf6d80acab8f479a6988d);
+        
+    
+        var popup_7bd3d74b396ee3cbdb5f9e1b5142d4b3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8645c1de976a077cb4cd08a269b4cb5d = $(`<div id="html_8645c1de976a077cb4cd08a269b4cb5d" style="width: 100.0%; height: 100.0%;">Disaster: Earthquake in Papua New Guinea (EQ)</div>`)[0];
+                popup_7bd3d74b396ee3cbdb5f9e1b5142d4b3.setContent(html_8645c1de976a077cb4cd08a269b4cb5d);
+            
+        
+
+        marker_197a495c85fad7e58987960c2e739d03.bindPopup(popup_7bd3d74b396ee3cbdb5f9e1b5142d4b3)
+        ;
+
+        
+    
+    
+            var marker_09a8f9c50fc87b207009e1c61d1f72cd = L.marker(
+                [34.1498, 26.1818],
+                {}
+            ).addTo(map_906d40b0c8662cb1e2f6f5a74eeffc4c);
+        
+    
+            var icon_2b9f0672c76e840a59d8cf7e3a460b2e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_09a8f9c50fc87b207009e1c61d1f72cd.setIcon(icon_2b9f0672c76e840a59d8cf7e3a460b2e);
+        
+    
+        var popup_72f0b00a9bb266ecbc8f2e6d5176c393 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_94d7b6492e341bac2c9dffcc157b3f69 = $(`<div id="html_94d7b6492e341bac2c9dffcc157b3f69" style="width: 100.0%; height: 100.0%;">Disaster: Earthquake in Greece (EQ)</div>`)[0];
+                popup_72f0b00a9bb266ecbc8f2e6d5176c393.setContent(html_94d7b6492e341bac2c9dffcc157b3f69);
+            
+        
+
+        marker_09a8f9c50fc87b207009e1c61d1f72cd.bindPopup(popup_72f0b00a9bb266ecbc8f2e6d5176c393)
+        ;
+
+        
+    
+    
+            var marker_33abfa7c6aa7e1c6b7ffd082f9587d3c = L.marker(
+                [22.9372399, 57.7570944],
+                {}
+            ).addTo(map_906d40b0c8662cb1e2f6f5a74eeffc4c);
+        
+    
+            var icon_90a2926586a92ff3c9ed243a014f7064 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_33abfa7c6aa7e1c6b7ffd082f9587d3c.setIcon(icon_90a2926586a92ff3c9ed243a014f7064);
+        
+    
+        var popup_75b4f986893ae2468eede077eb988d4a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9a20fa63128e41bf78b59ca9b4a3373c = $(`<div id="html_9a20fa63128e41bf78b59ca9b4a3373c" style="width: 100.0%; height: 100.0%;">Disaster: Flood in Oman (FL)</div>`)[0];
+                popup_75b4f986893ae2468eede077eb988d4a.setContent(html_9a20fa63128e41bf78b59ca9b4a3373c);
+            
+        
+
+        marker_33abfa7c6aa7e1c6b7ffd082f9587d3c.bindPopup(popup_75b4f986893ae2468eede077eb988d4a)
+        ;
+
+        
+    
+    
+            var marker_09c95e392e1f87611db6ac93c280c6bf = L.marker(
+                [33.1995461, 6.7096899],
+                {}
+            ).addTo(map_906d40b0c8662cb1e2f6f5a74eeffc4c);
+        
+    
+            var icon_3880a9526dd67514beb527d0a0c62403 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_09c95e392e1f87611db6ac93c280c6bf.setIcon(icon_3880a9526dd67514beb527d0a0c62403);
+        
+    
+        var popup_1bc357f701b8cd9da65a922e3a41c80b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5ea4ede7e1efb918d860a66a977e0f6f = $(`<div id="html_5ea4ede7e1efb918d860a66a977e0f6f" style="width: 100.0%; height: 100.0%;">Disaster: Flood in Algeria (FL)</div>`)[0];
+                popup_1bc357f701b8cd9da65a922e3a41c80b.setContent(html_5ea4ede7e1efb918d860a66a977e0f6f);
+            
+        
+
+        marker_09c95e392e1f87611db6ac93c280c6bf.bindPopup(popup_1bc357f701b8cd9da65a922e3a41c80b)
+        ;
+
+        
+    
+    
+            var marker_a2177399e5c66a6f36262f8b4bbc2245 = L.marker(
+                [2.3293744, 102.2880962],
+                {}
+            ).addTo(map_906d40b0c8662cb1e2f6f5a74eeffc4c);
+        
+    
+            var icon_7caeba5b0a9eb6e2564c060dc1c7a4bc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_a2177399e5c66a6f36262f8b4bbc2245.setIcon(icon_7caeba5b0a9eb6e2564c060dc1c7a4bc);
+        
+    
+        var popup_ed52e226ba38d1a1d18b0b74f0afaba4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_69e7f18d26a799105ae09aaa45394f58 = $(`<div id="html_69e7f18d26a799105ae09aaa45394f58" style="width: 100.0%; height: 100.0%;">Disaster: Flood in Malaysia (FL)</div>`)[0];
+                popup_ed52e226ba38d1a1d18b0b74f0afaba4.setContent(html_69e7f18d26a799105ae09aaa45394f58);
+            
+        
+
+        marker_a2177399e5c66a6f36262f8b4bbc2245.bindPopup(popup_ed52e226ba38d1a1d18b0b74f0afaba4)
+        ;
+
+        
+    
+    
+            var marker_8f4c3fba54010ac601cf347a852770b8 = L.marker(
+                [-3.1183228, 119.8337161],
+                {}
+            ).addTo(map_906d40b0c8662cb1e2f6f5a74eeffc4c);
+        
+    
+            var icon_666f91079e5ec3c36aad9d3eb8f4f3f3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_8f4c3fba54010ac601cf347a852770b8.setIcon(icon_666f91079e5ec3c36aad9d3eb8f4f3f3);
+        
+    
+        var popup_0631a764d1d2aee08348dd3f28c34c9e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b3276c189744a24335e85f28db431c86 = $(`<div id="html_b3276c189744a24335e85f28db431c86" style="width: 100.0%; height: 100.0%;">Disaster: Flood in Indonesia (FL)</div>`)[0];
+                popup_0631a764d1d2aee08348dd3f28c34c9e.setContent(html_b3276c189744a24335e85f28db431c86);
+            
+        
+
+        marker_8f4c3fba54010ac601cf347a852770b8.bindPopup(popup_0631a764d1d2aee08348dd3f28c34c9e)
+        ;
+
+        
+    
+    
+            var marker_029ef08e6d71f599a7ea22820f8bbafc = L.marker(
+                [-4.1567969, 19.8624716],
+                {}
+            ).addTo(map_906d40b0c8662cb1e2f6f5a74eeffc4c);
+        
+    
+            var icon_18878dcfa5586851f5f60c4688d0f788 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_029ef08e6d71f599a7ea22820f8bbafc.setIcon(icon_18878dcfa5586851f5f60c4688d0f788);
+        
+    
+        var popup_c6a66f51c51f0c98f68d37b96497d5fc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_064616038431fe55387a8185730eaeea = $(`<div id="html_064616038431fe55387a8185730eaeea" style="width: 100.0%; height: 100.0%;">Disaster: Flood in Democratic Republic of Congo (FL)</div>`)[0];
+                popup_c6a66f51c51f0c98f68d37b96497d5fc.setContent(html_064616038431fe55387a8185730eaeea);
+            
+        
+
+        marker_029ef08e6d71f599a7ea22820f8bbafc.bindPopup(popup_c6a66f51c51f0c98f68d37b96497d5fc)
+        ;
+
+        
+    
+    
+            var marker_dcc7c7074d7d326a76c4714707aad0ae = L.marker(
+                [2.493086230988093, -61.512591418144105],
+                {}
+            ).addTo(map_906d40b0c8662cb1e2f6f5a74eeffc4c);
+        
+    
+            var icon_616741750d22a51e4df1a6467995b4db = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_dcc7c7074d7d326a76c4714707aad0ae.setIcon(icon_616741750d22a51e4df1a6467995b4db);
+        
+    
+        var popup_78e93d0350aaedbc8bb24cb4ee199be5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f7fb139226fbf7020c4b739ed16d1825 = $(`<div id="html_f7fb139226fbf7020c4b739ed16d1825" style="width: 100.0%; height: 100.0%;">Disaster: Forest fires in Brazil (WF)</div>`)[0];
+                popup_78e93d0350aaedbc8bb24cb4ee199be5.setContent(html_f7fb139226fbf7020c4b739ed16d1825);
+            
+        
+
+        marker_dcc7c7074d7d326a76c4714707aad0ae.bindPopup(popup_78e93d0350aaedbc8bb24cb4ee199be5)
+        ;
+
+        
+    
+    
+            var marker_99b7c50343e6c008904abba260175964 = L.marker(
+                [-20.58256506847403, 139.0741988543673],
+                {}
+            ).addTo(map_906d40b0c8662cb1e2f6f5a74eeffc4c);
+        
+    
+            var icon_d1a7d04a659a2935bef845fbb14d815f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_99b7c50343e6c008904abba260175964.setIcon(icon_d1a7d04a659a2935bef845fbb14d815f);
+        
+    
+        var popup_c2f0d46304bd9d6afc5828fceecbe14f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0def3ede14599117f7466dcb4a7bf126 = $(`<div id="html_0def3ede14599117f7466dcb4a7bf126" style="width: 100.0%; height: 100.0%;">Disaster: Forest fires in Australia (WF)</div>`)[0];
+                popup_c2f0d46304bd9d6afc5828fceecbe14f.setContent(html_0def3ede14599117f7466dcb4a7bf126);
+            
+        
+
+        marker_99b7c50343e6c008904abba260175964.bindPopup(popup_c2f0d46304bd9d6afc5828fceecbe14f)
+        ;
+
+        
+    
+    
+            var marker_1ce113691499394b0cca1957a2143623 = L.marker(
+                [6.639135742598746, -58.07765844126771],
+                {}
+            ).addTo(map_906d40b0c8662cb1e2f6f5a74eeffc4c);
+        
+    
+            var icon_37360dbf4d18a7c53749c9de5afbc92f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_1ce113691499394b0cca1957a2143623.setIcon(icon_37360dbf4d18a7c53749c9de5afbc92f);
+        
+    
+        var popup_6a0a928b3c91b4d0b3e4393e5dc91854 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_be0f805e679842062afdbaf84ea452f9 = $(`<div id="html_be0f805e679842062afdbaf84ea452f9" style="width: 100.0%; height: 100.0%;">Disaster: Forest fires in Guyana (WF)</div>`)[0];
+                popup_6a0a928b3c91b4d0b3e4393e5dc91854.setContent(html_be0f805e679842062afdbaf84ea452f9);
+            
+        
+
+        marker_1ce113691499394b0cca1957a2143623.bindPopup(popup_6a0a928b3c91b4d0b3e4393e5dc91854)
+        ;
+
+        
+    
+    
+            var marker_cabfeb96bfb83424631cdf17f0e17c1c = L.marker(
+                [-20.94060628384508, 137.64519929867896],
+                {}
+            ).addTo(map_906d40b0c8662cb1e2f6f5a74eeffc4c);
+        
+    
+            var icon_2fdd4096849b818c31cc8d1ed5fb8f6f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_cabfeb96bfb83424631cdf17f0e17c1c.setIcon(icon_2fdd4096849b818c31cc8d1ed5fb8f6f);
+        
+    
+        var popup_e3320c6f2f5d1d8a891d2d0d144f7e01 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_efb4a65564f9a9e4c5119748579a9d31 = $(`<div id="html_efb4a65564f9a9e4c5119748579a9d31" style="width: 100.0%; height: 100.0%;">Disaster: Forest fires in Australia (WF)</div>`)[0];
+                popup_e3320c6f2f5d1d8a891d2d0d144f7e01.setContent(html_efb4a65564f9a9e4c5119748579a9d31);
+            
+        
+
+        marker_cabfeb96bfb83424631cdf17f0e17c1c.bindPopup(popup_e3320c6f2f5d1d8a891d2d0d144f7e01)
+        ;
+
+        
+    
+    
+            var marker_b214e97d9ac3a427215467011828e040 = L.marker(
+                [7.951878719912414, -66.68050476452393],
+                {}
+            ).addTo(map_906d40b0c8662cb1e2f6f5a74eeffc4c);
+        
+    
+            var icon_2d5b036cfa58524e4fcb9844dce39c0b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_b214e97d9ac3a427215467011828e040.setIcon(icon_2d5b036cfa58524e4fcb9844dce39c0b);
+        
+    
+        var popup_454dbd4fa0563a318c1158d382f26e74 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4ff7653560e998e9ed88f9cba969cc6a = $(`<div id="html_4ff7653560e998e9ed88f9cba969cc6a" style="width: 100.0%; height: 100.0%;">Disaster: Forest fires in Venezuela (WF)</div>`)[0];
+                popup_454dbd4fa0563a318c1158d382f26e74.setContent(html_4ff7653560e998e9ed88f9cba969cc6a);
+            
+        
+
+        marker_b214e97d9ac3a427215467011828e040.bindPopup(popup_454dbd4fa0563a318c1158d382f26e74)
+        ;
+
+        
+    
+    
+            var marker_4ec66bc2c0610d04f3b0072d017253d6 = L.marker(
+                [-16.239924526923556, 125.83456175964403],
+                {}
+            ).addTo(map_906d40b0c8662cb1e2f6f5a74eeffc4c);
+        
+    
+            var icon_5ff4d1d14e823b44ed0000479bc42e14 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_4ec66bc2c0610d04f3b0072d017253d6.setIcon(icon_5ff4d1d14e823b44ed0000479bc42e14);
+        
+    
+        var popup_d3a2650c0adba541ce2bd91b68e8f367 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_584035f6f235728589e6ae7b7e31c119 = $(`<div id="html_584035f6f235728589e6ae7b7e31c119" style="width: 100.0%; height: 100.0%;">Disaster: Forest fires in Australia (WF)</div>`)[0];
+                popup_d3a2650c0adba541ce2bd91b68e8f367.setContent(html_584035f6f235728589e6ae7b7e31c119);
+            
+        
+
+        marker_4ec66bc2c0610d04f3b0072d017253d6.bindPopup(popup_d3a2650c0adba541ce2bd91b68e8f367)
+        ;
+
+        
+    
+    
+            var marker_fcaa2b6ac3ce652904497edf2e693926 = L.marker(
+                [6.7481539320110295, -63.937088395826656],
+                {}
+            ).addTo(map_906d40b0c8662cb1e2f6f5a74eeffc4c);
+        
+    
+            var icon_47f214ea41adc3d5b92a1943a3d39121 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_fcaa2b6ac3ce652904497edf2e693926.setIcon(icon_47f214ea41adc3d5b92a1943a3d39121);
+        
+    
+        var popup_06ac589c14e5fcdf08779dd302cdd233 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_79ad77f9a20257fdbef441bdec777e51 = $(`<div id="html_79ad77f9a20257fdbef441bdec777e51" style="width: 100.0%; height: 100.0%;">Disaster: Forest fires in Venezuela (WF)</div>`)[0];
+                popup_06ac589c14e5fcdf08779dd302cdd233.setContent(html_79ad77f9a20257fdbef441bdec777e51);
+            
+        
+
+        marker_fcaa2b6ac3ce652904497edf2e693926.bindPopup(popup_06ac589c14e5fcdf08779dd302cdd233)
+        ;
+
+        
+    
+    
+            var marker_63692e42018b4b868a567ebe57503470 = L.marker(
+                [7.063190228096123, -64.03434397380292],
+                {}
+            ).addTo(map_906d40b0c8662cb1e2f6f5a74eeffc4c);
+        
+    
+            var icon_b6f38c7d835a67954e303fe3aeec6cf5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_63692e42018b4b868a567ebe57503470.setIcon(icon_b6f38c7d835a67954e303fe3aeec6cf5);
+        
+    
+        var popup_c9cbc4ef9367232c07077b1b1f7911b9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b409a9fc3d90c42de35d890d6b981791 = $(`<div id="html_b409a9fc3d90c42de35d890d6b981791" style="width: 100.0%; height: 100.0%;">Disaster: Forest fires in Venezuela (WF)</div>`)[0];
+                popup_c9cbc4ef9367232c07077b1b1f7911b9.setContent(html_b409a9fc3d90c42de35d890d6b981791);
+            
+        
+
+        marker_63692e42018b4b868a567ebe57503470.bindPopup(popup_c9cbc4ef9367232c07077b1b1f7911b9)
+        ;
+
+        
+    
+    
+            var marker_9ea963c4d4e2f8149182705355e533f3 = L.marker(
+                [38.70401636581132, -0.06957747795391533],
+                {}
+            ).addTo(map_906d40b0c8662cb1e2f6f5a74eeffc4c);
+        
+    
+            var icon_aeaaf6e59378ae43131bf07b14289857 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_9ea963c4d4e2f8149182705355e533f3.setIcon(icon_aeaaf6e59378ae43131bf07b14289857);
+        
+    
+        var popup_648a02b6472077db09e3e62f601874d0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_78d6515e14b586661778ea4f92141ca3 = $(`<div id="html_78d6515e14b586661778ea4f92141ca3" style="width: 100.0%; height: 100.0%;">Disaster: Forest fires in Spain (WF)</div>`)[0];
+                popup_648a02b6472077db09e3e62f601874d0.setContent(html_78d6515e14b586661778ea4f92141ca3);
+            
+        
+
+        marker_9ea963c4d4e2f8149182705355e533f3.bindPopup(popup_648a02b6472077db09e3e62f601874d0)
+        ;
+
+        
+    
+    
+            var marker_549467dd53a63a208d40116b318e0569 = L.marker(
+                [9.325086960978535, 30.984148254144973],
+                {}
+            ).addTo(map_906d40b0c8662cb1e2f6f5a74eeffc4c);
+        
+    
+            var icon_19182ea6e58d674e3b634f2cda147ee2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_549467dd53a63a208d40116b318e0569.setIcon(icon_19182ea6e58d674e3b634f2cda147ee2);
+        
+    
+        var popup_c1b61911af34d735290cd68f09626eb0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_82342a28e19f22a7d0b5bcbfcb37a516 = $(`<div id="html_82342a28e19f22a7d0b5bcbfcb37a516" style="width: 100.0%; height: 100.0%;">Disaster: Forest fires in Sudan (WF)</div>`)[0];
+                popup_c1b61911af34d735290cd68f09626eb0.setContent(html_82342a28e19f22a7d0b5bcbfcb37a516);
+            
+        
+
+        marker_549467dd53a63a208d40116b318e0569.bindPopup(popup_c1b61911af34d735290cd68f09626eb0)
+        ;
+
+        
+    
+    
+            var marker_6813db0b90d0f8fda0b3dc4ea05cd1a2 = L.marker(
+                [6.765168698278339, -63.97335439216658],
+                {}
+            ).addTo(map_906d40b0c8662cb1e2f6f5a74eeffc4c);
+        
+    
+            var icon_6e339ed8379ce0ce64be9f8515154342 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_6813db0b90d0f8fda0b3dc4ea05cd1a2.setIcon(icon_6e339ed8379ce0ce64be9f8515154342);
+        
+    
+        var popup_10593f3699bdd6ae19d1f537c7389221 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c861a17b8f5b9a4361b1c8fab9adefc2 = $(`<div id="html_c861a17b8f5b9a4361b1c8fab9adefc2" style="width: 100.0%; height: 100.0%;">Disaster: Forest fires in Venezuela (WF)</div>`)[0];
+                popup_10593f3699bdd6ae19d1f537c7389221.setContent(html_c861a17b8f5b9a4361b1c8fab9adefc2);
+            
+        
+
+        marker_6813db0b90d0f8fda0b3dc4ea05cd1a2.bindPopup(popup_10593f3699bdd6ae19d1f537c7389221)
+        ;
+
+        
+    
+    
+            var marker_c5492328920e4e57bae9b4a71d91f03c = L.marker(
+                [16.087954204114546, -95.99452558172706],
+                {}
+            ).addTo(map_906d40b0c8662cb1e2f6f5a74eeffc4c);
+        
+    
+            var icon_66a5a769d0ce6d3457b165d3fa3d3792 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_c5492328920e4e57bae9b4a71d91f03c.setIcon(icon_66a5a769d0ce6d3457b165d3fa3d3792);
+        
+    
+        var popup_4e5c3ff681fb7e60380b823f2600d172 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_015bdcba851bc6e010418617a53afc37 = $(`<div id="html_015bdcba851bc6e010418617a53afc37" style="width: 100.0%; height: 100.0%;">Disaster: Forest fires in Mexico (WF)</div>`)[0];
+                popup_4e5c3ff681fb7e60380b823f2600d172.setContent(html_015bdcba851bc6e010418617a53afc37);
+            
+        
+
+        marker_c5492328920e4e57bae9b4a71d91f03c.bindPopup(popup_4e5c3ff681fb7e60380b823f2600d172)
+        ;
+
+        
+    
+    
+            var marker_0adf7c269357247c7c2ccd2d8e4e2677 = L.marker(
+                [-18.81194012696931, 138.1127749824904],
+                {}
+            ).addTo(map_906d40b0c8662cb1e2f6f5a74eeffc4c);
+        
+    
+            var icon_839b5def2c3b623e32d82e7f790c0c8f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_0adf7c269357247c7c2ccd2d8e4e2677.setIcon(icon_839b5def2c3b623e32d82e7f790c0c8f);
+        
+    
+        var popup_523bf12ae076fe387115a5179edc3621 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6c92d11b75f595cd2dd01f01b0322565 = $(`<div id="html_6c92d11b75f595cd2dd01f01b0322565" style="width: 100.0%; height: 100.0%;">Disaster: Forest fires in Australia (WF)</div>`)[0];
+                popup_523bf12ae076fe387115a5179edc3621.setContent(html_6c92d11b75f595cd2dd01f01b0322565);
+            
+        
+
+        marker_0adf7c269357247c7c2ccd2d8e4e2677.bindPopup(popup_523bf12ae076fe387115a5179edc3621)
+        ;
+
+        
+    
+    
+            var marker_c59507001213c24c4082ced9efc7f6e6 = L.marker(
+                [-15.516766474762818, 130.00781249917196],
+                {}
+            ).addTo(map_906d40b0c8662cb1e2f6f5a74eeffc4c);
+        
+    
+            var icon_21ebb083db1506405fcc14dbea0709a9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_c59507001213c24c4082ced9efc7f6e6.setIcon(icon_21ebb083db1506405fcc14dbea0709a9);
+        
+    
+        var popup_3c7f4186ef8bbb4f7394eb9323a6d0cd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4702c09bc06c3a8831c0eb3f037a9d78 = $(`<div id="html_4702c09bc06c3a8831c0eb3f037a9d78" style="width: 100.0%; height: 100.0%;">Disaster: Forest fires in Australia (WF)</div>`)[0];
+                popup_3c7f4186ef8bbb4f7394eb9323a6d0cd.setContent(html_4702c09bc06c3a8831c0eb3f037a9d78);
+            
+        
+
+        marker_c59507001213c24c4082ced9efc7f6e6.bindPopup(popup_3c7f4186ef8bbb4f7394eb9323a6d0cd)
+        ;
+
+        
+    
+    
+            var marker_134ea3704a6cea7cd5361c4af91e8f14 = L.marker(
+                [7.5782310967826625, -68.44670238943324],
+                {}
+            ).addTo(map_906d40b0c8662cb1e2f6f5a74eeffc4c);
+        
+    
+            var icon_6bb2f7e9e08b5a4ef9ed06bbd86a8dd6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_134ea3704a6cea7cd5361c4af91e8f14.setIcon(icon_6bb2f7e9e08b5a4ef9ed06bbd86a8dd6);
+        
+    
+        var popup_9d73024439b0979d7592254f61046210 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9a51f2c359cd4d297868551b1dd0467f = $(`<div id="html_9a51f2c359cd4d297868551b1dd0467f" style="width: 100.0%; height: 100.0%;">Disaster: Forest fires in Venezuela (WF)</div>`)[0];
+                popup_9d73024439b0979d7592254f61046210.setContent(html_9a51f2c359cd4d297868551b1dd0467f);
+            
+        
+
+        marker_134ea3704a6cea7cd5361c4af91e8f14.bindPopup(popup_9d73024439b0979d7592254f61046210)
+        ;
+
+        
+    
+    
+            var marker_1a823198e98644089a6488a553442c75 = L.marker(
+                [11.0588, -86.9377],
+                {}
+            ).addTo(map_906d40b0c8662cb1e2f6f5a74eeffc4c);
+        
+    
+            var icon_b1fe59014a60e459afded157dfd1cd8f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_1a823198e98644089a6488a553442c75.setIcon(icon_b1fe59014a60e459afded157dfd1cd8f);
+        
+    
+        var popup_e17c8acd0553d885e25ff351475b219d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cad4bcba75210cdc9e47a46f707c7233 = $(`<div id="html_cad4bcba75210cdc9e47a46f707c7233" style="width: 100.0%; height: 100.0%;">Disaster: Earthquake in Nicaragua (EQ)</div>`)[0];
+                popup_e17c8acd0553d885e25ff351475b219d.setContent(html_cad4bcba75210cdc9e47a46f707c7233);
+            
+        
+
+        marker_1a823198e98644089a6488a553442c75.bindPopup(popup_e17c8acd0553d885e25ff351475b219d)
+        ;
+
+        
+    
+    
+            var marker_314a6f187b145fc94bad5f24b9ab688f = L.marker(
+                [-5.8184, 151.0968],
+                {}
+            ).addTo(map_906d40b0c8662cb1e2f6f5a74eeffc4c);
+        
+    
+            var icon_ca0204221f7b39faeda4b443848f4c7e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_314a6f187b145fc94bad5f24b9ab688f.setIcon(icon_ca0204221f7b39faeda4b443848f4c7e);
+        
+    
+        var popup_9cee47581e8e891c25510908b7679228 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_54359a0d6dfd04222b0a77d41d991212 = $(`<div id="html_54359a0d6dfd04222b0a77d41d991212" style="width: 100.0%; height: 100.0%;">Disaster: Earthquake in Papua New Guinea (EQ)</div>`)[0];
+                popup_9cee47581e8e891c25510908b7679228.setContent(html_54359a0d6dfd04222b0a77d41d991212);
+            
+        
+
+        marker_314a6f187b145fc94bad5f24b9ab688f.bindPopup(popup_9cee47581e8e891c25510908b7679228)
+        ;
+
+        
+    
+    
+            var marker_8f6af374b3b2c640b628e281b4e61c90 = L.marker(
+                [13.9522, -91.1647],
+                {}
+            ).addTo(map_906d40b0c8662cb1e2f6f5a74eeffc4c);
+        
+    
+            var icon_3f236bd3092dc0f90e9c44496e091e50 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_8f6af374b3b2c640b628e281b4e61c90.setIcon(icon_3f236bd3092dc0f90e9c44496e091e50);
+        
+    
+        var popup_37529ea6d699bf16f272ea811941fb5f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_933249523903c7e1d5d17f2f1e42514d = $(`<div id="html_933249523903c7e1d5d17f2f1e42514d" style="width: 100.0%; height: 100.0%;">Disaster: Earthquake in Guatemala (EQ)</div>`)[0];
+                popup_37529ea6d699bf16f272ea811941fb5f.setContent(html_933249523903c7e1d5d17f2f1e42514d);
+            
+        
+
+        marker_8f6af374b3b2c640b628e281b4e61c90.bindPopup(popup_37529ea6d699bf16f272ea811941fb5f)
+        ;
+
+        
+    
+    
+            var marker_13bb6cc33f58956862f1b128f00342d6 = L.marker(
+                [37.767, 101.1403],
+                {}
+            ).addTo(map_906d40b0c8662cb1e2f6f5a74eeffc4c);
+        
+    
+            var icon_ee0ca1e86dcc3a6762c82eef591459a0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_13bb6cc33f58956862f1b128f00342d6.setIcon(icon_ee0ca1e86dcc3a6762c82eef591459a0);
+        
+    
+        var popup_fcef7b2fa69c5a8a5fcc1429c119752c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fad4607dbac96ea2bfb750e151f515c8 = $(`<div id="html_fad4607dbac96ea2bfb750e151f515c8" style="width: 100.0%; height: 100.0%;">Disaster: Earthquake in China (EQ)</div>`)[0];
+                popup_fcef7b2fa69c5a8a5fcc1429c119752c.setContent(html_fad4607dbac96ea2bfb750e151f515c8);
+            
+        
+
+        marker_13bb6cc33f58956862f1b128f00342d6.bindPopup(popup_fcef7b2fa69c5a8a5fcc1429c119752c)
+        ;
+
+        
+    
+    
+            var marker_5310949fc60a5dacddf50429f6714948 = L.marker(
+                [21.1859, 146.0273],
+                {}
+            ).addTo(map_906d40b0c8662cb1e2f6f5a74eeffc4c);
+        
+    
+            var icon_181521ce60579ad7b9e7472a0cb60eca = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_5310949fc60a5dacddf50429f6714948.setIcon(icon_181521ce60579ad7b9e7472a0cb60eca);
+        
+    
+        var popup_3ca6549d8f3a36c257994d6f38005d13 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_30b26b1e1b76811bc38991a20711c3b3 = $(`<div id="html_30b26b1e1b76811bc38991a20711c3b3" style="width: 100.0%; height: 100.0%;">Disaster: Earthquake in  (EQ)</div>`)[0];
+                popup_3ca6549d8f3a36c257994d6f38005d13.setContent(html_30b26b1e1b76811bc38991a20711c3b3);
+            
+        
+
+        marker_5310949fc60a5dacddf50429f6714948.bindPopup(popup_3ca6549d8f3a36c257994d6f38005d13)
+        ;
+
+        
+    
+    
+            var marker_5b01b83f39b155f85c6a4b5f71c1c5ad = L.marker(
+                [41.3843, 78.5905],
+                {}
+            ).addTo(map_906d40b0c8662cb1e2f6f5a74eeffc4c);
+        
+    
+            var icon_fcee8c70895d22d38bb6034dae69da52 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_5b01b83f39b155f85c6a4b5f71c1c5ad.setIcon(icon_fcee8c70895d22d38bb6034dae69da52);
+        
+    
+        var popup_1169ddc2eb5322969b019345d7f74d6f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bffc0074cd0d010a36ea5197ccc006cb = $(`<div id="html_bffc0074cd0d010a36ea5197ccc006cb" style="width: 100.0%; height: 100.0%;">Disaster: Earthquake in China (EQ)</div>`)[0];
+                popup_1169ddc2eb5322969b019345d7f74d6f.setContent(html_bffc0074cd0d010a36ea5197ccc006cb);
+            
+        
+
+        marker_5b01b83f39b155f85c6a4b5f71c1c5ad.bindPopup(popup_1169ddc2eb5322969b019345d7f74d6f)
+        ;
+
+        
+    
+    
+            var marker_e474682a51dfef945fe6a7743fb9683d = L.marker(
+                [-1.5819, -80.9257],
+                {}
+            ).addTo(map_906d40b0c8662cb1e2f6f5a74eeffc4c);
+        
+    
+            var icon_c5b7884fe8666a69c411b0ad6bb7d656 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_e474682a51dfef945fe6a7743fb9683d.setIcon(icon_c5b7884fe8666a69c411b0ad6bb7d656);
+        
+    
+        var popup_a40a663333baa301fc57fcb866885075 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_15a9c564c79bfff39ab85c1ec00f89a0 = $(`<div id="html_15a9c564c79bfff39ab85c1ec00f89a0" style="width: 100.0%; height: 100.0%;">Disaster: Earthquake in Ecuador (EQ)</div>`)[0];
+                popup_a40a663333baa301fc57fcb866885075.setContent(html_15a9c564c79bfff39ab85c1ec00f89a0);
+            
+        
+
+        marker_e474682a51dfef945fe6a7743fb9683d.bindPopup(popup_a40a663333baa301fc57fcb866885075)
+        ;
+
+        
+    
+    
+            var marker_0a6e992993715fbbad1765b637b9cf92 = L.marker(
+                [-19.2191, -177.6607],
+                {}
+            ).addTo(map_906d40b0c8662cb1e2f6f5a74eeffc4c);
+        
+    
+            var icon_39846e20d0a65a030b0f05095ff069c5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_0a6e992993715fbbad1765b637b9cf92.setIcon(icon_39846e20d0a65a030b0f05095ff069c5);
+        
+    
+        var popup_9b106b5ee9bf0c69f158f5e0cb0caf0b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_705062da0e7a51ec86fbdc8118da6818 = $(`<div id="html_705062da0e7a51ec86fbdc8118da6818" style="width: 100.0%; height: 100.0%;">Disaster: Earthquake in Fiji (EQ)</div>`)[0];
+                popup_9b106b5ee9bf0c69f158f5e0cb0caf0b.setContent(html_705062da0e7a51ec86fbdc8118da6818);
+            
+        
+
+        marker_0a6e992993715fbbad1765b637b9cf92.bindPopup(popup_9b106b5ee9bf0c69f158f5e0cb0caf0b)
+        ;
+
+        
+    
+    
+            var marker_02b5d98e621ed0bad70601dde56a1040 = L.marker(
+                [-18.4614, -175.5624],
+                {}
+            ).addTo(map_906d40b0c8662cb1e2f6f5a74eeffc4c);
+        
+    
+            var icon_d38e7c9e1f558caf3c114304acdf6330 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_02b5d98e621ed0bad70601dde56a1040.setIcon(icon_d38e7c9e1f558caf3c114304acdf6330);
+        
+    
+        var popup_381bcb156e4a3d30877f0b49140c53ea = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f66e7914870675da310f75aafdec9e1d = $(`<div id="html_f66e7914870675da310f75aafdec9e1d" style="width: 100.0%; height: 100.0%;">Disaster: Earthquake in Tonga (EQ)</div>`)[0];
+                popup_381bcb156e4a3d30877f0b49140c53ea.setContent(html_f66e7914870675da310f75aafdec9e1d);
+            
+        
+
+        marker_02b5d98e621ed0bad70601dde56a1040.bindPopup(popup_381bcb156e4a3d30877f0b49140c53ea)
+        ;
+
+        
+    
+    
+            var marker_fef80506d0653ce1cf3d3178a90570db = L.marker(
+                [-35.2138, -178.8661],
+                {}
+            ).addTo(map_906d40b0c8662cb1e2f6f5a74eeffc4c);
+        
+    
+            var icon_bae38ef2c8310eccd0d0d8089db0e5fa = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_fef80506d0653ce1cf3d3178a90570db.setIcon(icon_bae38ef2c8310eccd0d0d8089db0e5fa);
+        
+    
+        var popup_f64185cb02fe3db3e1692937483b09d0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3fc1fd906f3818f44dfd73fdcd18677d = $(`<div id="html_3fc1fd906f3818f44dfd73fdcd18677d" style="width: 100.0%; height: 100.0%;">Disaster: Earthquake in  (EQ)</div>`)[0];
+                popup_f64185cb02fe3db3e1692937483b09d0.setContent(html_3fc1fd906f3818f44dfd73fdcd18677d);
+            
+        
+
+        marker_fef80506d0653ce1cf3d3178a90570db.bindPopup(popup_f64185cb02fe3db3e1692937483b09d0)
+        ;
+
+        
+    
+    
+            var marker_f35397fb253c1a11336259b4dddd461d = L.marker(
+                [19.8735, 121.4726],
+                {}
+            ).addTo(map_906d40b0c8662cb1e2f6f5a74eeffc4c);
+        
+    
+            var icon_de7616fc4fd7903948a4e4f89c9f7417 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_f35397fb253c1a11336259b4dddd461d.setIcon(icon_de7616fc4fd7903948a4e4f89c9f7417);
+        
+    
+        var popup_69c5c865369a4a5f79af2aee7486dd30 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b3f94a6f121312bd5bce13fcbe99f01c = $(`<div id="html_b3f94a6f121312bd5bce13fcbe99f01c" style="width: 100.0%; height: 100.0%;">Disaster: Earthquake in Philippines (EQ)</div>`)[0];
+                popup_69c5c865369a4a5f79af2aee7486dd30.setContent(html_b3f94a6f121312bd5bce13fcbe99f01c);
+            
+        
+
+        marker_f35397fb253c1a11336259b4dddd461d.bindPopup(popup_69c5c865369a4a5f79af2aee7486dd30)
+        ;
+
+        
+    
+    
+            var marker_27fba04e567a4381eb12c67753d17c07 = L.marker(
+                [7.5704, -37.1644],
+                {}
+            ).addTo(map_906d40b0c8662cb1e2f6f5a74eeffc4c);
+        
+    
+            var icon_5d481d98954c352d163f99ee9b1b435e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_27fba04e567a4381eb12c67753d17c07.setIcon(icon_5d481d98954c352d163f99ee9b1b435e);
+        
+    
+        var popup_6d4402a9a0c2c984a4fce24a39634e18 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_21e38a079443d360d78558f68d223249 = $(`<div id="html_21e38a079443d360d78558f68d223249" style="width: 100.0%; height: 100.0%;">Disaster: Earthquake in  (EQ)</div>`)[0];
+                popup_6d4402a9a0c2c984a4fce24a39634e18.setContent(html_21e38a079443d360d78558f68d223249);
+            
+        
+
+        marker_27fba04e567a4381eb12c67753d17c07.bindPopup(popup_6d4402a9a0c2c984a4fce24a39634e18)
+        ;
+
+        
+    
+    
+            var marker_3f08d24d777c3b47a2c56a2dd4344173 = L.marker(
+                [-29.943, -178.6686],
+                {}
+            ).addTo(map_906d40b0c8662cb1e2f6f5a74eeffc4c);
+        
+    
+            var icon_6c9fc4bafbcfad69d8b63d37bccaf389 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_3f08d24d777c3b47a2c56a2dd4344173.setIcon(icon_6c9fc4bafbcfad69d8b63d37bccaf389);
+        
+    
+        var popup_c249eaee6a543593bf1ddc2fa7f4432f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fabe3358d7037275bb3b7abf8c22129a = $(`<div id="html_fabe3358d7037275bb3b7abf8c22129a" style="width: 100.0%; height: 100.0%;">Disaster: Earthquake in  (EQ)</div>`)[0];
+                popup_c249eaee6a543593bf1ddc2fa7f4432f.setContent(html_fabe3358d7037275bb3b7abf8c22129a);
+            
+        
+
+        marker_3f08d24d777c3b47a2c56a2dd4344173.bindPopup(popup_c249eaee6a543593bf1ddc2fa7f4432f)
+        ;
+
+        
+    
+    
+            var marker_22118a6bc2d5161fc80c4942460789db = L.marker(
+                [-23.606, -63.7425],
+                {}
+            ).addTo(map_906d40b0c8662cb1e2f6f5a74eeffc4c);
+        
+    
+            var icon_497e03a7b586046c76a86d2a4aad8d26 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_22118a6bc2d5161fc80c4942460789db.setIcon(icon_497e03a7b586046c76a86d2a4aad8d26);
+        
+    
+        var popup_755a56d475cadbd9d41c9927376ec4bf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0f48e9991521bb9428d4ff2b91a63ab5 = $(`<div id="html_0f48e9991521bb9428d4ff2b91a63ab5" style="width: 100.0%; height: 100.0%;">Disaster: Earthquake in Argentina (EQ)</div>`)[0];
+                popup_755a56d475cadbd9d41c9927376ec4bf.setContent(html_0f48e9991521bb9428d4ff2b91a63ab5);
+            
+        
+
+        marker_22118a6bc2d5161fc80c4942460789db.bindPopup(popup_755a56d475cadbd9d41c9927376ec4bf)
+        ;
+
+        
+    
+    
+            var marker_d21460d993d59d9f2119364dee86fbc0 = L.marker(
+                [38.9609, 23.3997],
+                {}
+            ).addTo(map_906d40b0c8662cb1e2f6f5a74eeffc4c);
+        
+    
+            var icon_32e9ece6ebfd4b3668addc80877051b5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_d21460d993d59d9f2119364dee86fbc0.setIcon(icon_32e9ece6ebfd4b3668addc80877051b5);
+        
+    
+        var popup_114c7e3641eb43edef916b425b99fee4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9a3d040a84ec9cc2dfc4a598843e508b = $(`<div id="html_9a3d040a84ec9cc2dfc4a598843e508b" style="width: 100.0%; height: 100.0%;">Disaster: Earthquake in Greece (EQ)</div>`)[0];
+                popup_114c7e3641eb43edef916b425b99fee4.setContent(html_9a3d040a84ec9cc2dfc4a598843e508b);
+            
+        
+
+        marker_d21460d993d59d9f2119364dee86fbc0.bindPopup(popup_114c7e3641eb43edef916b425b99fee4)
+        ;
+
+        
+    
+    
+            var marker_2d01fb5f57c05d04552e223951dfc78e = L.marker(
+                [48.154177, -80.031281],
+                {}
+            ).addTo(map_906d40b0c8662cb1e2f6f5a74eeffc4c);
+        
+    
+            var icon_cc39a8e687d5aec14aa2b927eee01f61 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_2d01fb5f57c05d04552e223951dfc78e.setIcon(icon_cc39a8e687d5aec14aa2b927eee01f61);
+        
+    
+        var popup_994f5ee6ad52383dfdef3a70fe2db397 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_eca9b5551f514691bfa040673484b89d = $(`<div id="html_eca9b5551f514691bfa040673484b89d" style="width: 100.0%; height: 100.0%;">Disaster: Flood in Canada (FL)</div>`)[0];
+                popup_994f5ee6ad52383dfdef3a70fe2db397.setContent(html_eca9b5551f514691bfa040673484b89d);
+            
+        
+
+        marker_2d01fb5f57c05d04552e223951dfc78e.bindPopup(popup_994f5ee6ad52383dfdef3a70fe2db397)
+        ;
+
+        
+    
+    
+            var marker_dd8f035d4d3fb23af2162472205d7c9c = L.marker(
+                [36.0626005, 71.8661121031917],
+                {}
+            ).addTo(map_906d40b0c8662cb1e2f6f5a74eeffc4c);
+        
+    
+            var icon_ebcf981186151ceed285700316796744 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_dd8f035d4d3fb23af2162472205d7c9c.setIcon(icon_ebcf981186151ceed285700316796744);
+        
+    
+        var popup_ab47ab5337e8aecb12883d279c56e11e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6ac6f77b8ac8440ac07da1e4dfbbc227 = $(`<div id="html_6ac6f77b8ac8440ac07da1e4dfbbc227" style="width: 100.0%; height: 100.0%;">Disaster: Flood in Pakistan (FL)</div>`)[0];
+                popup_ab47ab5337e8aecb12883d279c56e11e.setContent(html_6ac6f77b8ac8440ac07da1e4dfbbc227);
+            
+        
+
+        marker_dd8f035d4d3fb23af2162472205d7c9c.bindPopup(popup_ab47ab5337e8aecb12883d279c56e11e)
+        ;
+
+        
+    
+    
+            var marker_a3e8c38e15cd488ea467a7fe35402d39 = L.marker(
+                [-25.4039435, -57.5538111],
+                {}
+            ).addTo(map_906d40b0c8662cb1e2f6f5a74eeffc4c);
+        
+    
+            var icon_56683d60e5526dc42e48efe2e11e45ec = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_a3e8c38e15cd488ea467a7fe35402d39.setIcon(icon_56683d60e5526dc42e48efe2e11e45ec);
+        
+    
+        var popup_a12876c0509029748e1a6c3c46d44810 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_72638df8c9a1402d3347d22c40e04b31 = $(`<div id="html_72638df8c9a1402d3347d22c40e04b31" style="width: 100.0%; height: 100.0%;">Disaster: Flood in Paraguay (FL)</div>`)[0];
+                popup_a12876c0509029748e1a6c3c46d44810.setContent(html_72638df8c9a1402d3347d22c40e04b31);
+            
+        
+
+        marker_a3e8c38e15cd488ea467a7fe35402d39.bindPopup(popup_a12876c0509029748e1a6c3c46d44810)
+        ;
+
+        
+    
+    
+            var marker_b6e46cf78f12747d74f3a17a96a5799b = L.marker(
+                [37.8228204, -112.4357561],
+                {}
+            ).addTo(map_906d40b0c8662cb1e2f6f5a74eeffc4c);
+        
+    
+            var icon_07a6ae7e8eebbf4803ec53ee4cbab51c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_b6e46cf78f12747d74f3a17a96a5799b.setIcon(icon_07a6ae7e8eebbf4803ec53ee4cbab51c);
+        
+    
+        var popup_c1b726db369516021c9e33999b3ee103 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9f63ab16375856d5059ab9d3211c9efc = $(`<div id="html_9f63ab16375856d5059ab9d3211c9efc" style="width: 100.0%; height: 100.0%;">Disaster: Flood in United States (FL)</div>`)[0];
+                popup_c1b726db369516021c9e33999b3ee103.setContent(html_9f63ab16375856d5059ab9d3211c9efc);
+            
+        
+
+        marker_b6e46cf78f12747d74f3a17a96a5799b.bindPopup(popup_c1b726db369516021c9e33999b3ee103)
+        ;
+
+        
+    
+    
+            var marker_0ba9222e6ba916341fa922061fda5a78 = L.marker(
+                [-17.976415242368564, 125.65279204791955],
+                {}
+            ).addTo(map_906d40b0c8662cb1e2f6f5a74eeffc4c);
+        
+    
+            var icon_718181d86efea60b8468706bae07430c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_0ba9222e6ba916341fa922061fda5a78.setIcon(icon_718181d86efea60b8468706bae07430c);
+        
+    
+        var popup_e245e2d4bb40c3b879967b20b1295af1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ff42fcdd3672c52a3b03aa4ad95d60b8 = $(`<div id="html_ff42fcdd3672c52a3b03aa4ad95d60b8" style="width: 100.0%; height: 100.0%;">Disaster: Forest fires in Australia (WF)</div>`)[0];
+                popup_e245e2d4bb40c3b879967b20b1295af1.setContent(html_ff42fcdd3672c52a3b03aa4ad95d60b8);
+            
+        
+
+        marker_0ba9222e6ba916341fa922061fda5a78.bindPopup(popup_e245e2d4bb40c3b879967b20b1295af1)
+        ;
+
+        
+    
+    
+            var marker_4f25f059ed3e4e9d76fb473f03365507 = L.marker(
+                [8.977798226449574, 31.361782371994707],
+                {}
+            ).addTo(map_906d40b0c8662cb1e2f6f5a74eeffc4c);
+        
+    
+            var icon_d2dec95fded161d20e973f08301e74d9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_4f25f059ed3e4e9d76fb473f03365507.setIcon(icon_d2dec95fded161d20e973f08301e74d9);
+        
+    
+        var popup_533662226839fdf54986d78a3ab06b33 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d5fae0589db97cb092557e3c41544be1 = $(`<div id="html_d5fae0589db97cb092557e3c41544be1" style="width: 100.0%; height: 100.0%;">Disaster: Forest fires in Sudan (WF)</div>`)[0];
+                popup_533662226839fdf54986d78a3ab06b33.setContent(html_d5fae0589db97cb092557e3c41544be1);
+            
+        
+
+        marker_4f25f059ed3e4e9d76fb473f03365507.bindPopup(popup_533662226839fdf54986d78a3ab06b33)
+        ;
+
+        
+    
+    
+            var marker_3a77299beb768f8479040672742ac977 = L.marker(
+                [-20.521215792729425, 139.1687396018309],
+                {}
+            ).addTo(map_906d40b0c8662cb1e2f6f5a74eeffc4c);
+        
+    
+            var icon_61435ccf89e12a2a17f627321aebb83b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_3a77299beb768f8479040672742ac977.setIcon(icon_61435ccf89e12a2a17f627321aebb83b);
+        
+    
+        var popup_e9ba3ec2d7df918c627c0b3a11d1cd64 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4b9d71568a9f9f65e7f451d19bc4f15d = $(`<div id="html_4b9d71568a9f9f65e7f451d19bc4f15d" style="width: 100.0%; height: 100.0%;">Disaster: Forest fires in Australia (WF)</div>`)[0];
+                popup_e9ba3ec2d7df918c627c0b3a11d1cd64.setContent(html_4b9d71568a9f9f65e7f451d19bc4f15d);
+            
+        
+
+        marker_3a77299beb768f8479040672742ac977.bindPopup(popup_e9ba3ec2d7df918c627c0b3a11d1cd64)
+        ;
+
+        
+    
+    
+            var marker_11b624e54abe16d2876b6ea76fbf7227 = L.marker(
+                [13.310825133134262, -83.8692076972217],
+                {}
+            ).addTo(map_906d40b0c8662cb1e2f6f5a74eeffc4c);
+        
+    
+            var icon_65de6a38471d1752c566b661bbfd25c3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_11b624e54abe16d2876b6ea76fbf7227.setIcon(icon_65de6a38471d1752c566b661bbfd25c3);
+        
+    
+        var popup_185c5e53bd2912c3e20eb11cc555b49b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_02878ff451721de80a0c73a95f52fd4f = $(`<div id="html_02878ff451721de80a0c73a95f52fd4f" style="width: 100.0%; height: 100.0%;">Disaster: Forest fires in Nicaragua (WF)</div>`)[0];
+                popup_185c5e53bd2912c3e20eb11cc555b49b.setContent(html_02878ff451721de80a0c73a95f52fd4f);
+            
+        
+
+        marker_11b624e54abe16d2876b6ea76fbf7227.bindPopup(popup_185c5e53bd2912c3e20eb11cc555b49b)
+        ;
+
+        
+    
+    
+            var marker_160c51bebacf362a691b834e22a691b1 = L.marker(
+                [-19.3677461585282, 134.31363668862895],
+                {}
+            ).addTo(map_906d40b0c8662cb1e2f6f5a74eeffc4c);
+        
+    
+            var icon_2c42df985a584d6f11d5277e2c036365 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_160c51bebacf362a691b834e22a691b1.setIcon(icon_2c42df985a584d6f11d5277e2c036365);
+        
+    
+        var popup_4c36206be0ea0d34021ed51701bdceb0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ffc02dd3e32ebae1774f2fcdefd40ed0 = $(`<div id="html_ffc02dd3e32ebae1774f2fcdefd40ed0" style="width: 100.0%; height: 100.0%;">Disaster: Forest fires in Australia (WF)</div>`)[0];
+                popup_4c36206be0ea0d34021ed51701bdceb0.setContent(html_ffc02dd3e32ebae1774f2fcdefd40ed0);
+            
+        
+
+        marker_160c51bebacf362a691b834e22a691b1.bindPopup(popup_4c36206be0ea0d34021ed51701bdceb0)
+        ;
+
+        
+    
+    
+            var marker_76847d1f81c952742d07bbb5c3904078 = L.marker(
+                [7.237163138961773, -67.20076499676628],
+                {}
+            ).addTo(map_906d40b0c8662cb1e2f6f5a74eeffc4c);
+        
+    
+            var icon_fc6a604b6caae45c079d757a6c9fcecc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_76847d1f81c952742d07bbb5c3904078.setIcon(icon_fc6a604b6caae45c079d757a6c9fcecc);
+        
+    
+        var popup_1dd5493948992c310185384ed166f9fe = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7a69463c435a285885490b41fbd79016 = $(`<div id="html_7a69463c435a285885490b41fbd79016" style="width: 100.0%; height: 100.0%;">Disaster: Forest fires in Venezuela (WF)</div>`)[0];
+                popup_1dd5493948992c310185384ed166f9fe.setContent(html_7a69463c435a285885490b41fbd79016);
+            
+        
+
+        marker_76847d1f81c952742d07bbb5c3904078.bindPopup(popup_1dd5493948992c310185384ed166f9fe)
+        ;
+
+        
+    
+    
+            var marker_3c0c43539c26fbe5094a1c9f23d56c35 = L.marker(
+                [12.3602, 125.2917],
+                {}
+            ).addTo(map_906d40b0c8662cb1e2f6f5a74eeffc4c);
+        
+    
+            var icon_41bff86275f6c6458b52055da09d198d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_3c0c43539c26fbe5094a1c9f23d56c35.setIcon(icon_41bff86275f6c6458b52055da09d198d);
+        
+    
+        var popup_8382a2434904aab1756fb3bd259d454b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6a5b6b383951b8ff6fb3a973cd9cf05b = $(`<div id="html_6a5b6b383951b8ff6fb3a973cd9cf05b" style="width: 100.0%; height: 100.0%;">Disaster: Earthquake in Philippines (EQ)</div>`)[0];
+                popup_8382a2434904aab1756fb3bd259d454b.setContent(html_6a5b6b383951b8ff6fb3a973cd9cf05b);
+            
+        
+
+        marker_3c0c43539c26fbe5094a1c9f23d56c35.bindPopup(popup_8382a2434904aab1756fb3bd259d454b)
+        ;
+
+        
+    
+    
+            var marker_4f46475c80b04cc73abec1fbbab5991f = L.marker(
+                [2.4662, 126.8087],
+                {}
+            ).addTo(map_906d40b0c8662cb1e2f6f5a74eeffc4c);
+        
+    
+            var icon_05fedf455389ae439c2a184c4e78ac16 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_4f46475c80b04cc73abec1fbbab5991f.setIcon(icon_05fedf455389ae439c2a184c4e78ac16);
+        
+    
+        var popup_024ed0ef137fe80616095e05f47c7122 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6be7e774d668b809fceda671c675e5fb = $(`<div id="html_6be7e774d668b809fceda671c675e5fb" style="width: 100.0%; height: 100.0%;">Disaster: Earthquake in Indonesia (EQ)</div>`)[0];
+                popup_024ed0ef137fe80616095e05f47c7122.setContent(html_6be7e774d668b809fceda671c675e5fb);
+            
+        
+
+        marker_4f46475c80b04cc73abec1fbbab5991f.bindPopup(popup_024ed0ef137fe80616095e05f47c7122)
+        ;
+
+        
+    
+    
+            var marker_de51af5b372842617eaf5ff2b58d01d8 = L.marker(
+                [2.094, 126.5866],
+                {}
+            ).addTo(map_906d40b0c8662cb1e2f6f5a74eeffc4c);
+        
+    
+            var icon_a5202007cdc240f3a43c862737dfb0c9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_de51af5b372842617eaf5ff2b58d01d8.setIcon(icon_a5202007cdc240f3a43c862737dfb0c9);
+        
+    
+        var popup_32d323d2d9f18198438479bb9bca1ffb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1e8a813cd3dd8ba1342bdeeaf6fa8054 = $(`<div id="html_1e8a813cd3dd8ba1342bdeeaf6fa8054" style="width: 100.0%; height: 100.0%;">Disaster: Earthquake in Indonesia (EQ)</div>`)[0];
+                popup_32d323d2d9f18198438479bb9bca1ffb.setContent(html_1e8a813cd3dd8ba1342bdeeaf6fa8054);
+            
+        
+
+        marker_de51af5b372842617eaf5ff2b58d01d8.bindPopup(popup_32d323d2d9f18198438479bb9bca1ffb)
+        ;
+
+        
+    
+    
+            var marker_fa126a14186563afd45d60a540df0b3e = L.marker(
+                [1.2678, 126.1749],
+                {}
+            ).addTo(map_906d40b0c8662cb1e2f6f5a74eeffc4c);
+        
+    
+            var icon_136bf896f22ee4ad56fa7153c2bd99b5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_fa126a14186563afd45d60a540df0b3e.setIcon(icon_136bf896f22ee4ad56fa7153c2bd99b5);
+        
+    
+        var popup_83ef9e37421df7715e2361ff422d19f3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_da45b8f12bd821fb6297c5358974f19f = $(`<div id="html_da45b8f12bd821fb6297c5358974f19f" style="width: 100.0%; height: 100.0%;">Disaster: Earthquake in Indonesia (EQ)</div>`)[0];
+                popup_83ef9e37421df7715e2361ff422d19f3.setContent(html_da45b8f12bd821fb6297c5358974f19f);
+            
+        
+
+        marker_fa126a14186563afd45d60a540df0b3e.bindPopup(popup_83ef9e37421df7715e2361ff422d19f3)
+        ;
+
+        
+    
+    
+            var marker_677c3054d71748c024a94a0776afda7f = L.marker(
+                [-49.0196, 121.3789],
+                {}
+            ).addTo(map_906d40b0c8662cb1e2f6f5a74eeffc4c);
+        
+    
+            var icon_3a7baed3f3f48211d83e9a36721e7cda = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_677c3054d71748c024a94a0776afda7f.setIcon(icon_3a7baed3f3f48211d83e9a36721e7cda);
+        
+    
+        var popup_3c0426f359ebd9e3a9d6e8f602c33957 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8b8910086836ccf4491794ca6975909a = $(`<div id="html_8b8910086836ccf4491794ca6975909a" style="width: 100.0%; height: 100.0%;">Disaster: Earthquake in  (EQ)</div>`)[0];
+                popup_3c0426f359ebd9e3a9d6e8f602c33957.setContent(html_8b8910086836ccf4491794ca6975909a);
+            
+        
+
+        marker_677c3054d71748c024a94a0776afda7f.bindPopup(popup_3c0426f359ebd9e3a9d6e8f602c33957)
+        ;
+
+        
+    
+    
+            var marker_d19c352260286c72b795e3c76e4910c8 = L.marker(
+                [23.9705, 121.5842],
+                {}
+            ).addTo(map_906d40b0c8662cb1e2f6f5a74eeffc4c);
+        
+    
+            var icon_77026eb4885c8647b0a9efa7ed20c374 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_d19c352260286c72b795e3c76e4910c8.setIcon(icon_77026eb4885c8647b0a9efa7ed20c374);
+        
+    
+        var popup_47b206477d00a387f66b983eb3e30f8a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ffd94d4c7a8f77b7fcaf7dd1e5e43f76 = $(`<div id="html_ffd94d4c7a8f77b7fcaf7dd1e5e43f76" style="width: 100.0%; height: 100.0%;">Disaster: Earthquake in Taiwan (EQ)</div>`)[0];
+                popup_47b206477d00a387f66b983eb3e30f8a.setContent(html_ffd94d4c7a8f77b7fcaf7dd1e5e43f76);
+            
+        
+
+        marker_d19c352260286c72b795e3c76e4910c8.bindPopup(popup_47b206477d00a387f66b983eb3e30f8a)
+        ;
+
+        
+    
+    
+            var marker_c58a00627a4802c15dd2a09152613a2d = L.marker(
+                [23.6689, 121.6218],
+                {}
+            ).addTo(map_906d40b0c8662cb1e2f6f5a74eeffc4c);
+        
+    
+            var icon_cb27a54f7e9a05540c27d8f4e863cf77 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_c58a00627a4802c15dd2a09152613a2d.setIcon(icon_cb27a54f7e9a05540c27d8f4e863cf77);
+        
+    
+        var popup_0cd03a3b9de701b683c5b53cd1db4c5b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1d19c7f58190c23eec813b31a09a9d79 = $(`<div id="html_1d19c7f58190c23eec813b31a09a9d79" style="width: 100.0%; height: 100.0%;">Disaster: Earthquake in Taiwan (EQ)</div>`)[0];
+                popup_0cd03a3b9de701b683c5b53cd1db4c5b.setContent(html_1d19c7f58190c23eec813b31a09a9d79);
+            
+        
+
+        marker_c58a00627a4802c15dd2a09152613a2d.bindPopup(popup_0cd03a3b9de701b683c5b53cd1db4c5b)
+        ;
+
+        
+    
+    
+            var marker_bcfd28bf1df2de1de9cb6922edfbc595 = L.marker(
+                [31.5394, 138.2415],
+                {}
+            ).addTo(map_906d40b0c8662cb1e2f6f5a74eeffc4c);
+        
+    
+            var icon_f45bd432bafc52ed371bc3bbc0b6e580 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_bcfd28bf1df2de1de9cb6922edfbc595.setIcon(icon_f45bd432bafc52ed371bc3bbc0b6e580);
+        
+    
+        var popup_3be1d5ad2b2dd7a358960ffa8d0ca2c6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_58fa87362b45987eb86a9ecaf371867e = $(`<div id="html_58fa87362b45987eb86a9ecaf371867e" style="width: 100.0%; height: 100.0%;">Disaster: Earthquake in  (EQ)</div>`)[0];
+                popup_3be1d5ad2b2dd7a358960ffa8d0ca2c6.setContent(html_58fa87362b45987eb86a9ecaf371867e);
+            
+        
+
+        marker_bcfd28bf1df2de1de9cb6922edfbc595.bindPopup(popup_3be1d5ad2b2dd7a358960ffa8d0ca2c6)
+        ;
+
+        
+    
+    
+            var marker_362bd3f040ec897d797f665a7c66e619 = L.marker(
+                [-15.0104, -173.0416],
+                {}
+            ).addTo(map_906d40b0c8662cb1e2f6f5a74eeffc4c);
+        
+    
+            var icon_a19be88e8b3beaa1f89cab297721bdb8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_362bd3f040ec897d797f665a7c66e619.setIcon(icon_a19be88e8b3beaa1f89cab297721bdb8);
+        
+    
+        var popup_d1df3cf7bf7e87a15f9b79d197169716 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ba7b3bb7dfe71ec0b873259367c08286 = $(`<div id="html_ba7b3bb7dfe71ec0b873259367c08286" style="width: 100.0%; height: 100.0%;">Disaster: Earthquake in Tonga (EQ)</div>`)[0];
+                popup_d1df3cf7bf7e87a15f9b79d197169716.setContent(html_ba7b3bb7dfe71ec0b873259367c08286);
+            
+        
+
+        marker_362bd3f040ec897d797f665a7c66e619.bindPopup(popup_d1df3cf7bf7e87a15f9b79d197169716)
+        ;
+
+        
+    
+    
+            var marker_c5df78657165a160720c9369694920c8 = L.marker(
+                [34.0384, -177.0026],
+                {}
+            ).addTo(map_906d40b0c8662cb1e2f6f5a74eeffc4c);
+        
+    
+            var icon_599d223bd38aeda539960002e01fd196 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_c5df78657165a160720c9369694920c8.setIcon(icon_599d223bd38aeda539960002e01fd196);
+        
+    
+        var popup_9d511f25c8dcda9b95238f22349f381a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_16f783b71f154b53d4e5344b4d531980 = $(`<div id="html_16f783b71f154b53d4e5344b4d531980" style="width: 100.0%; height: 100.0%;">Disaster: Earthquake in  (EQ)</div>`)[0];
+                popup_9d511f25c8dcda9b95238f22349f381a.setContent(html_16f783b71f154b53d4e5344b4d531980);
+            
+        
+
+        marker_c5df78657165a160720c9369694920c8.bindPopup(popup_9d511f25c8dcda9b95238f22349f381a)
+        ;
+
+        
+    
+    
+            var marker_400b54fd165a8aa3de321c514f93a8b9 = L.marker(
+                [11.8716, 125.7685],
+                {}
+            ).addTo(map_906d40b0c8662cb1e2f6f5a74eeffc4c);
+        
+    
+            var icon_f3d2b6753a419165b57ce6e1a42ffb26 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_400b54fd165a8aa3de321c514f93a8b9.setIcon(icon_f3d2b6753a419165b57ce6e1a42ffb26);
+        
+    
+        var popup_2c1e1055e9e71899d7e054a45e616d1a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_389540c1f7f6efce5bc68583071e7843 = $(`<div id="html_389540c1f7f6efce5bc68583071e7843" style="width: 100.0%; height: 100.0%;">Disaster: Earthquake in Philippines (EQ)</div>`)[0];
+                popup_2c1e1055e9e71899d7e054a45e616d1a.setContent(html_389540c1f7f6efce5bc68583071e7843);
+            
+        
+
+        marker_400b54fd165a8aa3de321c514f93a8b9.bindPopup(popup_2c1e1055e9e71899d7e054a45e616d1a)
+        ;
+
+        
+    
+    
+            var marker_05b59fdd37621d518c6690b40aaca6fc = L.marker(
+                [-20.3386, -177.6404],
+                {}
+            ).addTo(map_906d40b0c8662cb1e2f6f5a74eeffc4c);
+        
+    
+            var icon_ff75b26ffb2266f8f8fcd791ad38f287 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_05b59fdd37621d518c6690b40aaca6fc.setIcon(icon_ff75b26ffb2266f8f8fcd791ad38f287);
+        
+    
+        var popup_e847cc1e8358a0f8d0383227a465b67b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_abd98d0d03528a2b4af4c41bf57e17d3 = $(`<div id="html_abd98d0d03528a2b4af4c41bf57e17d3" style="width: 100.0%; height: 100.0%;">Disaster: Earthquake in Fiji (EQ)</div>`)[0];
+                popup_e847cc1e8358a0f8d0383227a465b67b.setContent(html_abd98d0d03528a2b4af4c41bf57e17d3);
+            
+        
+
+        marker_05b59fdd37621d518c6690b40aaca6fc.bindPopup(popup_e847cc1e8358a0f8d0383227a465b67b)
+        ;
+
+        
+    
+    
+            var marker_e34fd7412a84bf58560cdcf1bc180a29 = L.marker(
+                [-42.0915, 88.8897],
+                {}
+            ).addTo(map_906d40b0c8662cb1e2f6f5a74eeffc4c);
+        
+    
+            var icon_1593c6752303f3f77d74e9e296d08226 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_e34fd7412a84bf58560cdcf1bc180a29.setIcon(icon_1593c6752303f3f77d74e9e296d08226);
+        
+    
+        var popup_a73b9d5d2affa0c3f4ad424c61ba9648 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ea137b63b4942000c4c2f6a17276122d = $(`<div id="html_ea137b63b4942000c4c2f6a17276122d" style="width: 100.0%; height: 100.0%;">Disaster: Earthquake in  (EQ)</div>`)[0];
+                popup_a73b9d5d2affa0c3f4ad424c61ba9648.setContent(html_ea137b63b4942000c4c2f6a17276122d);
+            
+        
+
+        marker_e34fd7412a84bf58560cdcf1bc180a29.bindPopup(popup_a73b9d5d2affa0c3f4ad424c61ba9648)
+        ;
+
+        
+    
+    
+            var marker_b65aa5edf2c98b2d4a9043a19a5c96db = L.marker(
+                [2.2509, 126.7545],
+                {}
+            ).addTo(map_906d40b0c8662cb1e2f6f5a74eeffc4c);
+        
+    
+            var icon_9ab69d533fcf4c67b05bccd8ebec1666 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_b65aa5edf2c98b2d4a9043a19a5c96db.setIcon(icon_9ab69d533fcf4c67b05bccd8ebec1666);
+        
+    
+        var popup_9fa34a5f20f8c39c824179a4bbf74244 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a2babd7b0ba8b374f2bcb52fd01ec181 = $(`<div id="html_a2babd7b0ba8b374f2bcb52fd01ec181" style="width: 100.0%; height: 100.0%;">Disaster: Earthquake in Indonesia (EQ)</div>`)[0];
+                popup_9fa34a5f20f8c39c824179a4bbf74244.setContent(html_a2babd7b0ba8b374f2bcb52fd01ec181);
+            
+        
+
+        marker_b65aa5edf2c98b2d4a9043a19a5c96db.bindPopup(popup_9fa34a5f20f8c39c824179a4bbf74244)
+        ;
+
+        
+    
+    
+            var marker_9fd055d91ac485af63f64c341c3481bb = L.marker(
+                [33.4243, 81.6708],
+                {}
+            ).addTo(map_906d40b0c8662cb1e2f6f5a74eeffc4c);
+        
+    
+            var icon_93b5119fdb0470a35c4b3610346e379a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_9fd055d91ac485af63f64c341c3481bb.setIcon(icon_93b5119fdb0470a35c4b3610346e379a);
+        
+    
+        var popup_e28cffc58f43a39a98b82d88b4137406 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d53c9888336b2c6e3f7835b84aeef9d1 = $(`<div id="html_d53c9888336b2c6e3f7835b84aeef9d1" style="width: 100.0%; height: 100.0%;">Disaster: Earthquake in China (EQ)</div>`)[0];
+                popup_e28cffc58f43a39a98b82d88b4137406.setContent(html_d53c9888336b2c6e3f7835b84aeef9d1);
+            
+        
+
+        marker_9fd055d91ac485af63f64c341c3481bb.bindPopup(popup_e28cffc58f43a39a98b82d88b4137406)
+        ;
+
+        
+    
+    
+            var marker_f9efbcf5b738fecf0e6641f3db5864b1 = L.marker(
+                [-25.674, 179.7249],
+                {}
+            ).addTo(map_906d40b0c8662cb1e2f6f5a74eeffc4c);
+        
+    
+            var icon_0122f010abd53be97830a5f781d89887 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_f9efbcf5b738fecf0e6641f3db5864b1.setIcon(icon_0122f010abd53be97830a5f781d89887);
+        
+    
+        var popup_8244a07d770339ce9344ec2c2f8e571e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_87e1e0923338698d153c5a184c2f7239 = $(`<div id="html_87e1e0923338698d153c5a184c2f7239" style="width: 100.0%; height: 100.0%;">Disaster: Earthquake in  (EQ)</div>`)[0];
+                popup_8244a07d770339ce9344ec2c2f8e571e.setContent(html_87e1e0923338698d153c5a184c2f7239);
+            
+        
+
+        marker_f9efbcf5b738fecf0e6641f3db5864b1.bindPopup(popup_8244a07d770339ce9344ec2c2f8e571e)
+        ;
+
+        
+    
+    
+            var marker_42d3675e0dc722cc729afcb8cdf4c575 = L.marker(
+                [32.8129681, 66.0183185],
+                {}
+            ).addTo(map_906d40b0c8662cb1e2f6f5a74eeffc4c);
+        
+    
+            var icon_0fbe8df5691ca26102f5c21214547391 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_42d3675e0dc722cc729afcb8cdf4c575.setIcon(icon_0fbe8df5691ca26102f5c21214547391);
+        
+    
+        var popup_d644058ef57d301b8dde260c16e71718 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0b80734e9979c738f304063138013a40 = $(`<div id="html_0b80734e9979c738f304063138013a40" style="width: 100.0%; height: 100.0%;">Disaster: Flood in Afghanistan (FL)</div>`)[0];
+                popup_d644058ef57d301b8dde260c16e71718.setContent(html_0b80734e9979c738f304063138013a40);
+            
+        
+
+        marker_42d3675e0dc722cc729afcb8cdf4c575.bindPopup(popup_d644058ef57d301b8dde260c16e71718)
+        ;
+
+        
+    
+    
+            var marker_1e60c039c1dbbf7744d7dd8a3032a7e0 = L.marker(
+                [-16.0239601, 34.7905614],
+                {}
+            ).addTo(map_906d40b0c8662cb1e2f6f5a74eeffc4c);
+        
+    
+            var icon_fe7af2e0590ef477828315a9e5f911fb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_1e60c039c1dbbf7744d7dd8a3032a7e0.setIcon(icon_fe7af2e0590ef477828315a9e5f911fb);
+        
+    
+        var popup_e5e1f0a58ebdd3b4be630d1924d5169e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_05b1b0d825373c9f5e49f150d8437e31 = $(`<div id="html_05b1b0d825373c9f5e49f150d8437e31" style="width: 100.0%; height: 100.0%;">Disaster: Flood in Malawi (FL)</div>`)[0];
+                popup_e5e1f0a58ebdd3b4be630d1924d5169e.setContent(html_05b1b0d825373c9f5e49f150d8437e31);
+            
+        
+
+        marker_1e60c039c1dbbf7744d7dd8a3032a7e0.bindPopup(popup_e5e1f0a58ebdd3b4be630d1924d5169e)
+        ;
+
+        
+    
+    
+            var marker_358e26ec06faf63c07e8a7545cc6baff = L.marker(
+                [38.782511639666424, 0.10747941830093995],
+                {}
+            ).addTo(map_906d40b0c8662cb1e2f6f5a74eeffc4c);
+        
+    
+            var icon_769ad3c8f510105e78094df3a19cd9c5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_358e26ec06faf63c07e8a7545cc6baff.setIcon(icon_769ad3c8f510105e78094df3a19cd9c5);
+        
+    
+        var popup_504ce9daf755ff986f500927cbf0c64a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5562810c71f07cd25dbef98c1ac2e360 = $(`<div id="html_5562810c71f07cd25dbef98c1ac2e360" style="width: 100.0%; height: 100.0%;">Disaster: Forest fires in Spain (WF)</div>`)[0];
+                popup_504ce9daf755ff986f500927cbf0c64a.setContent(html_5562810c71f07cd25dbef98c1ac2e360);
+            
+        
+
+        marker_358e26ec06faf63c07e8a7545cc6baff.bindPopup(popup_504ce9daf755ff986f500927cbf0c64a)
+        ;
+
+        
+    
+    
+            var marker_28ee43a1a41dbd6bb9cc4036013b7c93 = L.marker(
+                [8.231069779370541, 31.204631004759555],
+                {}
+            ).addTo(map_906d40b0c8662cb1e2f6f5a74eeffc4c);
+        
+    
+            var icon_8f1c293f301c275b88f45734508278c0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_28ee43a1a41dbd6bb9cc4036013b7c93.setIcon(icon_8f1c293f301c275b88f45734508278c0);
+        
+    
+        var popup_0f4aa8066c17cddb103b330a556a4556 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b4cc3ff618c29d45a542482b8e4a5e86 = $(`<div id="html_b4cc3ff618c29d45a542482b8e4a5e86" style="width: 100.0%; height: 100.0%;">Disaster: Forest fires in Sudan (WF)</div>`)[0];
+                popup_0f4aa8066c17cddb103b330a556a4556.setContent(html_b4cc3ff618c29d45a542482b8e4a5e86);
+            
+        
+
+        marker_28ee43a1a41dbd6bb9cc4036013b7c93.bindPopup(popup_0f4aa8066c17cddb103b330a556a4556)
+        ;
+
+        
+    
+    
+            var marker_b3f952b69a573a11d13d60d1c2713946 = L.marker(
+                [8.184173159513653, 33.41405890723895],
+                {}
+            ).addTo(map_906d40b0c8662cb1e2f6f5a74eeffc4c);
+        
+    
+            var icon_a3bf502fa637b763228a2ac0778556d1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_b3f952b69a573a11d13d60d1c2713946.setIcon(icon_a3bf502fa637b763228a2ac0778556d1);
+        
+    
+        var popup_f99eafe1c2009ee67a686a8bee40d329 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_771fbf06d8da8acd77f7ab7f9f70e718 = $(`<div id="html_771fbf06d8da8acd77f7ab7f9f70e718" style="width: 100.0%; height: 100.0%;">Disaster: Forest fires in Ethiopia (WF)</div>`)[0];
+                popup_f99eafe1c2009ee67a686a8bee40d329.setContent(html_771fbf06d8da8acd77f7ab7f9f70e718);
+            
+        
+
+        marker_b3f952b69a573a11d13d60d1c2713946.bindPopup(popup_f99eafe1c2009ee67a686a8bee40d329)
+        ;
+
+        
+    
+</script>
+</html>
