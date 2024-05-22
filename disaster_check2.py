@@ -1,24 +1,51 @@
-from cgitb import text
 import pandas as pd
-import folium, webbrowser, os, schedule, pyautogui, time
+import folium, webbrowser, os, schedule, sys, time, math
 from gdacs.api import GDACSAPIReader
 
 def load_companies_from_csv(file_path):
+    """Load company data from a CSV file."""
     return pd.read_csv(file_path)
 
+def haversine(lat1, lon1, lat2, lon2):
+    """Calculate the great-circle distance between two points on the Earth."""
+    R = 6378.1  # Earth radius in kilometers at the equator
+    phi1, phi2 = math.radians(lat1), math.radians(lat2)
+    delta_phi = math.radians(lat2 - lat1)
+    delta_lambda = math.radians(lon2 - lon1)
+
+    a = math.sin(delta_phi / 2) ** 2 + math.cos(phi1) * math.cos(phi2) * math.sin(delta_lambda / 2) ** 2
+    c = 2 * math.atan2(math.sqrt(a), math.sqrt(1 - a))
+
+    return R * c  # Distance in kilometers
+
 def check_disaster_vicinity(company_lat, company_lon, disasters_data):
+    """Check if a company is within 150 miles (about 241 kilometers) of any disaster."""
+    distances = []
     for disaster in disasters_data:
         disaster_lat, disaster_lon = disaster['coordinates']
-        if abs(disaster_lat - company_lat) < 0.5 and abs(disaster_lon - company_lon) < 0.5:
-            return True
-    return False
+        distance = haversine(company_lat, company_lon, disaster_lat, disaster_lon)
+        distances.append((distance, company_lat, company_lon, disaster_lat, disaster_lon))
+
+    distances.sort(key=lambda x: x[0])  # Sort by distance
+
+    in_jeopardy = False
+    for distance, company_lat, company_lon, disaster_lat, disaster_lon in distances:
+        if distance <= 241:
+            print(f"\033[91mCompany at ({company_lat}, {company_lon}) is within {distance:.2f} km of disaster at ({disaster_lat}, {disaster_lon})\033[0m")
+            in_jeopardy = True
+        else:
+            print(f"Company at ({company_lat}, {company_lon}) is {distance:.2f} km away from disaster at ({disaster_lat}, {disaster_lon})")
+    return in_jeopardy
 
 def create_map_from_companies(companies_df, disasters_data, include_disasters=False):
+    """Create a map showing companies and optionally disasters."""
     if companies_df.empty:
         print("No company data available.")
         return None
-    initial_location = [companies_df.iloc[0]['Latitude'], companies_df.iloc[0]['Longitude']]
+
+    initial_location = [41.8719, 12.5674] # Italy as the center of the map
     company_map = folium.Map(location=initial_location, zoom_start=2)
+
     for _, row in companies_df.iterrows():
         in_jeopardy = check_disaster_vicinity(row['Latitude'], row['Longitude'], disasters_data)
         color = 'red' if in_jeopardy else 'blue'
@@ -27,19 +54,31 @@ def create_map_from_companies(companies_df, disasters_data, include_disasters=Fa
             popup=f"{row['Company_Name']}{' - In Jeopardy!' if in_jeopardy else ''}",
             icon=folium.Icon(color=color)
         ).add_to(company_map)
-    
+
     if include_disasters:
         for disaster in disasters_data:
+            # Add a marker for the disaster
             folium.Marker(
-                location=disaster['coordinates'][::-1],  # Reverse the coordinates if necessary
+                location=disaster['coordinates'][::-1],  # Reverse the coordinates for correct order
                 popup=f"Disaster: {disaster['name']} ({disaster['disaster_type']})",
                 icon=folium.Icon(color='orange')
             ).add_to(company_map)
 
-    company_map.save('updated_all_companies_map.html')
-    return company_map
+            # Add a circle representing the 150-mile (241 km) radius
+            folium.Circle(
+                location=disaster['coordinates'][::-1],
+                radius=241000,  # 241 km converted to meters
+                color='orange',
+                fill=True,
+                fill_opacity=0.3
+            ).add_to(company_map)
+
+    map_path = 'updated_all_companies_map.html'
+    company_map.save(map_path)
+    return map_path
 
 def extract_disaster_info(disasters):
+    """Extract relevant information from disaster data."""
     disaster_info = []
     for feature in disasters['features']:
         properties = feature['properties']
@@ -55,30 +94,33 @@ def extract_disaster_info(disasters):
     return disaster_info
 
 def fetch_and_update_map(csv_path, include_disasters=False):
+    """Fetch the latest disaster data and update the map."""
     try:
         client = GDACSAPIReader()
         disaster_data = client.latest_events()
         disaster_data = vars(disaster_data)
         disaster_info = extract_disaster_info(disaster_data)
         companies_df = load_companies_from_csv(csv_path)
-        create_map_from_companies(companies_df, disaster_info, include_disasters)
+        map_path = create_map_from_companies(companies_df, disaster_info, include_disasters)
         print("Map updated with the latest disaster data.")
-        pyautogui.hotkey('f5') # Refresh the browser with updated data
+        webbrowser.open('file://' + os.path.realpath(map_path), new=0)  # Open the map in the browser
     except Exception as e:
         print(f"Error during fetching or processing: {e}")
 
-#fetch_and_update_map('companies.csv', include_disasters=True)  # Initial Display of Map
-webbrowser.open('file://' + os.path.realpath('updated_all_companies_map.html'))  # Open the map in the browser
+# Initial display of the map
+fetch_and_update_map('companies.csv', include_disasters=True)
 
-# Automatically update the map on a schedule (minutes)
-schedule_hours = 11 * 60 * 60  # 12 hours in seconds
-Schedule_minutes = 59  * 60  # 59 minutes in seconds
-schedule.every(schedule_hours).seconds.do(fetch_and_update_map, include_disasters=True, csv_path='companies.csv')
-countdown = schedule_hours + Schedule_minutes  # 11 hours and 59 minutes in seconds
+# Automatically update the map every hour
+schedule.every().hour.do(fetch_and_update_map, csv_path='companies.csv', include_disasters=True)
 
-while countdown > 0:
-    print(f"Schedule running...Next update in {countdown // 3600} hours and {(countdown % 3600) // 60} minutes.", end='\r')
-    time.sleep(60)  # Sleep for 1 minute
-    countdown -= 60
 while True:
     schedule.run_pending()
+    for i in range(3600, 0, -1):  # 3600 seconds = 1 hour
+        sys.stdout.write("\rScheduler started. Next update in {:02d}:{:02d} minutes".format(i // 60, i % 60))
+        sys.stdout.flush()
+        time.sleep(1)
+    sys.stdout.write("\n")
+
+while True:
+    schedule.run_pending()
+    time.sleep(1)
